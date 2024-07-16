@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking UI</title>
+</head>
+<body>
+    <div>
+        <h3>Account Details:</h3>
+        <p id="accountNumber">Account Number: Loading...</p>
+        <p id="balance">Balance: Loading...</p>
+        <p id="accountType">Account Type: Loading...</p>
+        <p id="createdDate">Created Date: Loading...</p>
+    </div>
+
+    <div>
+        <h1>Add New Account</h1>
+        <form id="add-account-form">
+            <label>
+                Account Number:
+                <input type="text" id="accountNumberInput" required>
+            </label>
+            <br>
+            <label>
+                Balance:
+                <input type="number" id="balanceInput" required>
+            </label>
+            <br>
+            <label>
+                Account Type:
+                <input type="text" id="accountTypeInput" required>
+            </label>
+            <br>
+            <button type="submit">Add Account</button>
+        </form>
+    </div>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
