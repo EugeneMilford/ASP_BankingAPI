@@ -252,3 +252,4 @@ D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\refint\BankingAPI.dll
 D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\BankingAPI.pdb
 D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\BankingAPI.genruntimeconfig.cache
 D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\ref\BankingAPI.dll
+D:\Projects\ASP NET REST API\BankingAPI\bin\Debug\net8.0\BankingAPI.staticwebassets.runtime.json

@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "pnedo2wPpvw5dyc12OKzdp1/FKBgyBJ6XK1PNk2fp84=",
+  "Hash": "go0QviSA3vumGg801/fkbJuY0BxggJUlZVp6+45/C4A=",
   "Source": "BankingAPI",
   "BasePath": "_content/BankingAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "BankingAPI\\wwwroot",
+      "Source": "BankingAPI",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\Accounts.html",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "Accounts.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Accounts.html"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\site.js",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
 }
