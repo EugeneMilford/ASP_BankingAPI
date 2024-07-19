@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Accounts.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\Contact.html",
+      "PackagePath": "staticwebassets\\Contact.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\Banking.css",
+      "PackagePath": "staticwebassets\\css\\Banking.css"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
