@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets\\html\\Accounts.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\AccountDetails.html",
+      "PackagePath": "staticwebassets\\html\\Accounts\\AccountDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\CreateAccount.html",
+      "PackagePath": "staticwebassets\\html\\Accounts\\CreateAccount.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\EditAccount.html",
+      "PackagePath": "staticwebassets\\html\\Accounts\\EditAccount.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Contact.html",
       "PackagePath": "staticwebassets\\html\\Contact.html"
     },
@@ -39,6 +51,10 @@
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\banking06.jpeg",
       "PackagePath": "staticwebassets\\img\\banking06.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\banking_hero.jpeg",
+      "PackagePath": "staticwebassets\\img\\banking_hero.jpeg"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\site.js",
