@@ -12,6 +12,7 @@ namespace BankingAPI.Data
 
         public DbSet<Account> Accounts { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Transaction> Transaction { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,5 +28,6 @@ namespace BankingAPI.Data
 
             base.OnModelCreating(modelBuilder);
         }
+        
     }
 }

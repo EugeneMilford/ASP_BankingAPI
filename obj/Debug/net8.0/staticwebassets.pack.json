@@ -25,6 +25,14 @@
       "PackagePath": "staticwebassets\\html\\Contact.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
+      "PackagePath": "staticwebassets\\html\\Transactions.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions\\CreateTransaction.html",
+      "PackagePath": "staticwebassets\\html\\Transactions\\CreateTransaction.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
       "PackagePath": "staticwebassets\\html\\index.html"
     },
@@ -61,8 +69,8 @@
       "PackagePath": "staticwebassets\\js\\account.js"
     },
     {
-      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\transaction.js",
+      "PackagePath": "staticwebassets\\js\\transaction.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BankingAPI.Microsoft.AspNetCore.StaticWebAssets.props",

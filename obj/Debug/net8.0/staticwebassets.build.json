@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q28EmqbfAVNwnEeGqYqEoIPsI85J5QGRhPloT7YggLQ=",
+  "Hash": "4hifO9LWyIWqvNwDZonekBuPGSt3OZOejTVnxTwLbhk=",
   "Source": "BankingAPI",
   "BasePath": "_content/BankingAPI",
   "Mode": "Default",
@@ -148,6 +148,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\index.html"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "html/Transactions.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\Transactions.html"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions\\CreateTransaction.html",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "html/Transactions/CreateTransaction.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\Transactions\\CreateTransaction.html"
     },
     {
       "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\banking_hero.jpeg",
@@ -302,12 +340,12 @@
       "OriginalItemSpec": "wwwroot\\js\\account.js"
     },
     {
-      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\transaction.js",
       "SourceId": "BankingAPI",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
       "BasePath": "_content/BankingAPI",
-      "RelativePath": "js/site.js",
+      "RelativePath": "js/transaction.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -318,7 +356,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\transaction.js"
     }
   ]
 }
