@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4hifO9LWyIWqvNwDZonekBuPGSt3OZOejTVnxTwLbhk=",
+  "Hash": "sTnbWYpbxdAjS89BKyvfPVBNWa5yfjQ/YTibP7bt43c=",
   "Source": "BankingAPI",
   "BasePath": "_content/BankingAPI",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\Accounts\\CreateAccount.html"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\DeleteAccount.html",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "html/Accounts/DeleteAccount.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\Accounts\\DeleteAccount.html"
     },
     {
       "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\EditAccount.html",

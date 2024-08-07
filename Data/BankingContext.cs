@@ -20,6 +20,12 @@ namespace BankingAPI.Data
             modelBuilder.Entity<Transaction>().ToTable("transaction");
             modelBuilder.Entity<User>().ToTable("users");
 
+            // Configure foreign key for Transaction
+            modelBuilder.Entity<Transaction>()
+                .HasOne(t => t.Account)
+                .WithMany(a => a.Transactions)
+                .HasForeignKey(t => t.AccountId);
+
             // Seed Users
             modelBuilder.Entity<User>().HasData(
                 new User { Id = 1, Username = "johndoe", PasswordHash = "hpassword1", FirstName = "John", LastName = "Doe", Email = "john@example.com" },
@@ -28,6 +34,6 @@ namespace BankingAPI.Data
 
             base.OnModelCreating(modelBuilder);
         }
-        
+
     }
 }

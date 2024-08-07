@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\html\\Accounts\\CreateAccount.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\DeleteAccount.html",
+      "PackagePath": "staticwebassets\\html\\Accounts\\DeleteAccount.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\EditAccount.html",
       "PackagePath": "staticwebassets\\html\\Accounts\\EditAccount.html"
     },
