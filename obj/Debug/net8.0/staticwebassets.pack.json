@@ -25,6 +25,26 @@
       "PackagePath": "staticwebassets\\html\\Accounts\\EditAccount.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
+      "PackagePath": "staticwebassets\\html\\Bills.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills\\BillDetails.html",
+      "PackagePath": "staticwebassets\\html\\Bills\\BillDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills\\CreateBill.html",
+      "PackagePath": "staticwebassets\\html\\Bills\\CreateBill.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills\\DeleteBill.html",
+      "PackagePath": "staticwebassets\\html\\Bills\\DeleteBill.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills\\EditBill.html",
+      "PackagePath": "staticwebassets\\html\\Bills\\EditBill.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Contact.html",
       "PackagePath": "staticwebassets\\html\\Contact.html"
     },

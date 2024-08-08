@@ -14,6 +14,7 @@ namespace BankingAPI.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Transaction> Transaction { get; set; }
         public DbSet<CreditCard> CreditCard { get; set; }
+        public DbSet<BillPayment> BillPayments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,6 +22,7 @@ namespace BankingAPI.Data
             modelBuilder.Entity<Transaction>().ToTable("transaction");
             modelBuilder.Entity<User>().ToTable("users");
             modelBuilder.Entity<CreditCard>().ToTable("credit");
+            modelBuilder.Entity<BillPayment>().ToTable("bills");
 
             // Configure foreign key for Transaction
             modelBuilder.Entity<Transaction>()
