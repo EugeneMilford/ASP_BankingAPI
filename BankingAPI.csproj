@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\Contact.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\html\CreditCards.html" />
     <_ContentIncludedByDefault Remove="wwwroot\index.html" />
   </ItemGroup>
 

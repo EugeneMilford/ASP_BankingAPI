@@ -29,12 +29,44 @@
       "PackagePath": "staticwebassets\\html\\Contact.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards.html",
+      "PackagePath": "staticwebassets\\html\\CreditCards.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards\\CreateCreditCard.html",
+      "PackagePath": "staticwebassets\\html\\CreditCards\\CreateCreditCard.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards\\CreditCardDetails.html",
+      "PackagePath": "staticwebassets\\html\\CreditCards\\CreditCardDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards\\DeleteCreditCard.html",
+      "PackagePath": "staticwebassets\\html\\CreditCards\\DeleteCreditCard.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards\\EditCreditCard.html",
+      "PackagePath": "staticwebassets\\html\\CreditCards\\EditCreditCard.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
       "PackagePath": "staticwebassets\\html\\Transactions.html"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions\\CreateTransaction.html",
       "PackagePath": "staticwebassets\\html\\Transactions\\CreateTransaction.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions\\DeleteTransaction.html",
+      "PackagePath": "staticwebassets\\html\\Transactions\\DeleteTransaction.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions\\EditTransaction.html",
+      "PackagePath": "staticwebassets\\html\\Transactions\\EditTransaction.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions\\TransactionDetails.html",
+      "PackagePath": "staticwebassets\\html\\Transactions\\TransactionDetails.html"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
@@ -73,8 +105,20 @@
       "PackagePath": "staticwebassets\\js\\account.js"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\billPayment.js",
+      "PackagePath": "staticwebassets\\js\\billPayment.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\creditCard.js",
+      "PackagePath": "staticwebassets\\js\\creditCard.js"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\transaction.js",
       "PackagePath": "staticwebassets\\js\\transaction.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\user.js",
+      "PackagePath": "staticwebassets\\js\\user.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BankingAPI.Microsoft.AspNetCore.StaticWebAssets.props",

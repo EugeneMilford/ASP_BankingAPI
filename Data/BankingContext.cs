@@ -13,12 +13,14 @@ namespace BankingAPI.Data
         public DbSet<Account> Accounts { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Transaction> Transaction { get; set; }
+        public DbSet<CreditCard> CreditCard { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>().ToTable("account");
             modelBuilder.Entity<Transaction>().ToTable("transaction");
             modelBuilder.Entity<User>().ToTable("users");
+            modelBuilder.Entity<CreditCard>().ToTable("credit");
 
             // Configure foreign key for Transaction
             modelBuilder.Entity<Transaction>()
@@ -34,6 +36,5 @@ namespace BankingAPI.Data
 
             base.OnModelCreating(modelBuilder);
         }
-
     }
 }
