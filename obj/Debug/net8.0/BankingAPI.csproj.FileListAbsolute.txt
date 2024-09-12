@@ -261,3 +261,8 @@ D:\Projects\ASP NET REST API\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.Fi
 D:\Projects\ASP NET REST API\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\Projects\ASP NET REST API\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Projects\ASP NET REST API\BankingAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\BankingAPI.RazorAssemblyInfo.cache
+D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\BankingAPI.RazorAssemblyInfo.cs
+D:\Projects\ASP NET REST API\BankingAPI\bin\Debug\net8.0\BankingAPI.staticwebassets.endpoints.json
+D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Projects\ASP NET REST API\BankingAPI\obj\Debug\net8.0\staticwebassets\msbuild.BankingAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

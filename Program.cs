@@ -29,7 +29,16 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<BankingContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDefaultIdentity<BankingAPIUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<IdentityContext>();
+// Add Identity DbContext
+builder.Services.AddDbContext<IdentityContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityContextConnection")));
+
+// Add Identity services
+builder.Services.AddDefaultIdentity<BankingAPIUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+})
+.AddEntityFrameworkStores<IdentityContext>();
 
 var app = builder.Build();
 
@@ -38,16 +47,20 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
+else
+{
+    app.UseExceptionHandler("/Home/Error"); // Handle errors in production.
+    app.UseHsts(); // Implement HTTPS Strict Transport Security
+}
 
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
-
 app.UseRouting();
 
 // Enable CORS
 app.UseCors("AllowAll");
 
+app.UseAuthentication(); // Ensure authentication middleware is added
 app.UseAuthorization();
 
 app.MapControllers();
