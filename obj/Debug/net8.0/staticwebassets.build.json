@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ktQLIOCB2N3OgsuzFfSXrv2w4lVWKpFZkKhB3rmpeoI=",
+  "Hash": "N6/1x0I0j923kMGLZiYsHNnneAOcSzbcwItO7G5vr9o=",
   "Source": "BankingAPI",
   "BasePath": "_content/BankingAPI",
   "Mode": "Default",
@@ -2215,8 +2215,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "eak3nzye8m",
-      "Integrity": "ivPTrta26b2YJhqG7RshfYJt4A0w1yQ2U+eIcsDfBdI=",
+      "Fingerprint": "nut3l6b03t",
+      "Integrity": "33YptgozX/ZQ+pdkadPHg/+HZmOb12scz53HGwOUuDw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Banking.css"
@@ -2236,8 +2236,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5szvughfuk",
-      "Integrity": "G0tqrqvohiDdsq5LUQ3WWSoUJ1606xz/cdX6eLzIKD8=",
+      "Fingerprint": "qy25byx4li",
+      "Integrity": "vp7htRQtkiS6Jtmu0gJbAWlfk62NWBkIipBKQ3JKpIs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\Accounts.html"
@@ -2341,8 +2341,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gugt2cf438",
-      "Integrity": "eCMqpNX+j4ufPVxjkpU0jMinJ8YZfSoJwKf4223UzXE=",
+      "Fingerprint": "wjnmwk9udq",
+      "Integrity": "vCDBhwmdfFNBaMDoRO3dL0hWyP72cD67LZk7lG1TEWs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\Bills.html"
@@ -2446,8 +2446,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ngjqxrcug",
-      "Integrity": "AQlnal+3GDJnqE7ih60m2pvkxVhvsXSv1eT7pb0OlmI=",
+      "Fingerprint": "6eygacykp3",
+      "Integrity": "HixO1Z1R5xEi4qufuXByMMH4icL2xjpIm1iNh/uG1tY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\Contact.html"
@@ -2467,8 +2467,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zmdsm0lm3y",
-      "Integrity": "9SVHlPXvGG7aOlqCk/DF5vYzjO/OTrnd6qfOwImcpzg=",
+      "Fingerprint": "89cpvba3l2",
+      "Integrity": "tAownlTb3RzF/zDYm6fWAwYzLVHZkLaadM0hctPiYtc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\CreditCards.html"
@@ -2572,8 +2572,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mvgyqo9qxl",
-      "Integrity": "Dqyen+lmYja3Gakj2Ls5+5mCsDVPfzfQQV3UiPWMszw=",
+      "Fingerprint": "v5k8bwgits",
+      "Integrity": "EwODhfXfiRVqPYPQ8gl8D4JxZXesxSUnnHNIoCUxpg0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\index.html"
@@ -2593,8 +2593,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3uwr3tjudi",
-      "Integrity": "Bfo7hKZzqDCBTix0YGql9IKDBujTPSRpPpVJmYJ2U7c=",
+      "Fingerprint": "mu5970m0r4",
+      "Integrity": "IrMf3mH2PCPv1SBDw7KNVuEteA9c0ujz9p7h4TBpjuY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\Transactions.html"
@@ -2852,6 +2852,90 @@
       "OriginalItemSpec": "wwwroot\\img\\banking06.jpeg"
     },
     {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\bills.jpeg",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "img/bills#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vp9fi0ner3",
+      "Integrity": "Dd8O08FMP87Aa2pzoZ4AiaTAN9mxGRacmTv/46a1hfk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bills.jpeg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\contact.jpeg",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "img/contact#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ndaww4666v",
+      "Integrity": "i4yHFjoOoXBDGkf1dPQ89SM8cOUpeKrV0y1sEfu7sGM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\contact.jpeg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\credit.jpeg",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "img/credit#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mwh887uwj9",
+      "Integrity": "pnCg0GB+RMkWu3+QOcTk75tioaKJWBu7uZ4L/udawe0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\credit.jpeg"
+    },
+    {
+      "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\transaction.jpeg",
+      "SourceId": "BankingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\",
+      "BasePath": "_content/BankingAPI",
+      "RelativePath": "img/transaction#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0b7xav1nj1",
+      "Integrity": "xGaAsDoehumloQRTDD/8/9mFqxQ/C193/hL34ZAiENY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\transaction.jpeg"
+    },
+    {
       "Identity": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\account.js",
       "SourceId": "BankingAPI",
       "SourceType": "Discovered",
@@ -2969,7 +3053,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3701"
+          "Value": "5445"
         },
         {
           "Name": "Content-Type",
@@ -2977,11 +3061,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ivPTrta26b2YJhqG7RshfYJt4A0w1yQ2U+eIcsDfBdI=\""
+          "Value": "\"33YptgozX/ZQ+pdkadPHg/+HZmOb12scz53HGwOUuDw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Sep 2024 18:53:25 GMT"
+          "Value": "Sun, 15 Sep 2024 21:26:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2991,12 +3075,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ivPTrta26b2YJhqG7RshfYJt4A0w1yQ2U+eIcsDfBdI="
+          "Value": "sha256-33YptgozX/ZQ+pdkadPHg/+HZmOb12scz53HGwOUuDw="
         }
       ]
     },
     {
-      "Route": "css/Banking.eak3nzye8m.css",
+      "Route": "css/Banking.nut3l6b03t.css",
       "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\Banking.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3006,7 +3090,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3701"
+          "Value": "5445"
         },
         {
           "Name": "Content-Type",
@@ -3014,11 +3098,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ivPTrta26b2YJhqG7RshfYJt4A0w1yQ2U+eIcsDfBdI=\""
+          "Value": "\"33YptgozX/ZQ+pdkadPHg/+HZmOb12scz53HGwOUuDw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Sep 2024 18:53:25 GMT"
+          "Value": "Sun, 15 Sep 2024 21:26:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3028,7 +3112,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eak3nzye8m"
+          "Value": "nut3l6b03t"
         },
         {
           "Name": "label",
@@ -3036,7 +3120,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ivPTrta26b2YJhqG7RshfYJt4A0w1yQ2U+eIcsDfBdI="
+          "Value": "sha256-33YptgozX/ZQ+pdkadPHg/+HZmOb12scz53HGwOUuDw="
         }
       ]
     },
@@ -5665,51 +5749,6 @@
       ]
     },
     {
-      "Route": "html/Accounts.5szvughfuk.html",
-      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7254"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G0tqrqvohiDdsq5LUQ3WWSoUJ1606xz/cdX6eLzIKD8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 12 Sep 2024 18:55:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5szvughfuk"
-        },
-        {
-          "Name": "label",
-          "Value": "html/Accounts.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-G0tqrqvohiDdsq5LUQ3WWSoUJ1606xz/cdX6eLzIKD8="
-        }
-      ]
-    },
-    {
       "Route": "html/Accounts.html",
       "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
       "Selectors": [],
@@ -5720,7 +5759,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7254"
+          "Value": "7482"
         },
         {
           "Name": "Content-Type",
@@ -5728,11 +5767,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G0tqrqvohiDdsq5LUQ3WWSoUJ1606xz/cdX6eLzIKD8=\""
+          "Value": "\"vp7htRQtkiS6Jtmu0gJbAWlfk62NWBkIipBKQ3JKpIs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Sep 2024 18:55:02 GMT"
+          "Value": "Sun, 15 Sep 2024 21:07:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5742,7 +5781,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-G0tqrqvohiDdsq5LUQ3WWSoUJ1606xz/cdX6eLzIKD8="
+          "Value": "sha256-vp7htRQtkiS6Jtmu0gJbAWlfk62NWBkIipBKQ3JKpIs="
+        }
+      ]
+    },
+    {
+      "Route": "html/Accounts.qy25byx4li.html",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vp7htRQtkiS6Jtmu0gJbAWlfk62NWBkIipBKQ3JKpIs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:07:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qy25byx4li"
+        },
+        {
+          "Name": "label",
+          "Value": "html/Accounts.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vp7htRQtkiS6Jtmu0gJbAWlfk62NWBkIipBKQ3JKpIs="
         }
       ]
     },
@@ -6075,51 +6159,6 @@
       ]
     },
     {
-      "Route": "html/Bills.gugt2cf438.html",
-      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7270"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eCMqpNX+j4ufPVxjkpU0jMinJ8YZfSoJwKf4223UzXE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 Aug 2024 13:02:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gugt2cf438"
-        },
-        {
-          "Name": "label",
-          "Value": "html/Bills.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-eCMqpNX+j4ufPVxjkpU0jMinJ8YZfSoJwKf4223UzXE="
-        }
-      ]
-    },
-    {
       "Route": "html/Bills.html",
       "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
       "Selectors": [],
@@ -6130,7 +6169,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7270"
+          "Value": "6938"
         },
         {
           "Name": "Content-Type",
@@ -6138,11 +6177,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eCMqpNX+j4ufPVxjkpU0jMinJ8YZfSoJwKf4223UzXE=\""
+          "Value": "\"vCDBhwmdfFNBaMDoRO3dL0hWyP72cD67LZk7lG1TEWs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 Aug 2024 13:02:26 GMT"
+          "Value": "Sun, 15 Sep 2024 21:34:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6152,7 +6191,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eCMqpNX+j4ufPVxjkpU0jMinJ8YZfSoJwKf4223UzXE="
+          "Value": "sha256-vCDBhwmdfFNBaMDoRO3dL0hWyP72cD67LZk7lG1TEWs="
+        }
+      ]
+    },
+    {
+      "Route": "html/Bills.wjnmwk9udq.html",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vCDBhwmdfFNBaMDoRO3dL0hWyP72cD67LZk7lG1TEWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:34:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wjnmwk9udq"
+        },
+        {
+          "Name": "label",
+          "Value": "html/Bills.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vCDBhwmdfFNBaMDoRO3dL0hWyP72cD67LZk7lG1TEWs="
         }
       ]
     },
@@ -6485,7 +6569,7 @@
       ]
     },
     {
-      "Route": "html/Contact.5ngjqxrcug.html",
+      "Route": "html/Contact.6eygacykp3.html",
       "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Contact.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6495,7 +6579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5948"
+          "Value": "6057"
         },
         {
           "Name": "Content-Type",
@@ -6503,11 +6587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AQlnal+3GDJnqE7ih60m2pvkxVhvsXSv1eT7pb0OlmI=\""
+          "Value": "\"HixO1Z1R5xEi4qufuXByMMH4icL2xjpIm1iNh/uG1tY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 Aug 2024 13:01:03 GMT"
+          "Value": "Sun, 15 Sep 2024 21:36:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6517,7 +6601,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5ngjqxrcug"
+          "Value": "6eygacykp3"
         },
         {
           "Name": "label",
@@ -6525,7 +6609,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AQlnal+3GDJnqE7ih60m2pvkxVhvsXSv1eT7pb0OlmI="
+          "Value": "sha256-HixO1Z1R5xEi4qufuXByMMH4icL2xjpIm1iNh/uG1tY="
         }
       ]
     },
@@ -6540,7 +6624,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5948"
+          "Value": "6057"
         },
         {
           "Name": "Content-Type",
@@ -6548,11 +6632,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AQlnal+3GDJnqE7ih60m2pvkxVhvsXSv1eT7pb0OlmI=\""
+          "Value": "\"HixO1Z1R5xEi4qufuXByMMH4icL2xjpIm1iNh/uG1tY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 Aug 2024 13:01:03 GMT"
+          "Value": "Sun, 15 Sep 2024 21:36:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6562,7 +6646,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AQlnal+3GDJnqE7ih60m2pvkxVhvsXSv1eT7pb0OlmI="
+          "Value": "sha256-HixO1Z1R5xEi4qufuXByMMH4icL2xjpIm1iNh/uG1tY="
+        }
+      ]
+    },
+    {
+      "Route": "html/CreditCards.89cpvba3l2.html",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tAownlTb3RzF/zDYm6fWAwYzLVHZkLaadM0hctPiYtc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:19:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "89cpvba3l2"
+        },
+        {
+          "Name": "label",
+          "Value": "html/CreditCards.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tAownlTb3RzF/zDYm6fWAwYzLVHZkLaadM0hctPiYtc="
         }
       ]
     },
@@ -6577,7 +6706,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7269"
+          "Value": "7062"
         },
         {
           "Name": "Content-Type",
@@ -6585,11 +6714,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9SVHlPXvGG7aOlqCk/DF5vYzjO/OTrnd6qfOwImcpzg=\""
+          "Value": "\"tAownlTb3RzF/zDYm6fWAwYzLVHZkLaadM0hctPiYtc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 20 Aug 2024 09:29:53 GMT"
+          "Value": "Sun, 15 Sep 2024 21:19:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6599,52 +6728,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9SVHlPXvGG7aOlqCk/DF5vYzjO/OTrnd6qfOwImcpzg="
-        }
-      ]
-    },
-    {
-      "Route": "html/CreditCards.zmdsm0lm3y.html",
-      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7269"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9SVHlPXvGG7aOlqCk/DF5vYzjO/OTrnd6qfOwImcpzg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 20 Aug 2024 09:29:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zmdsm0lm3y"
-        },
-        {
-          "Name": "label",
-          "Value": "html/CreditCards.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9SVHlPXvGG7aOlqCk/DF5vYzjO/OTrnd6qfOwImcpzg="
+          "Value": "sha256-tAownlTb3RzF/zDYm6fWAwYzLVHZkLaadM0hctPiYtc="
         }
       ]
     },
@@ -6987,7 +7071,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18616"
+          "Value": "25104"
         },
         {
           "Name": "Content-Type",
@@ -6995,11 +7079,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Dqyen+lmYja3Gakj2Ls5+5mCsDVPfzfQQV3UiPWMszw=\""
+          "Value": "\"EwODhfXfiRVqPYPQ8gl8D4JxZXesxSUnnHNIoCUxpg0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Sep 2024 18:59:58 GMT"
+          "Value": "Sun, 15 Sep 2024 21:05:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7009,12 +7093,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Dqyen+lmYja3Gakj2Ls5+5mCsDVPfzfQQV3UiPWMszw="
+          "Value": "sha256-EwODhfXfiRVqPYPQ8gl8D4JxZXesxSUnnHNIoCUxpg0="
         }
       ]
     },
     {
-      "Route": "html/index.mvgyqo9qxl.html",
+      "Route": "html/index.v5k8bwgits.html",
       "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7024,7 +7108,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18616"
+          "Value": "25104"
         },
         {
           "Name": "Content-Type",
@@ -7032,11 +7116,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Dqyen+lmYja3Gakj2Ls5+5mCsDVPfzfQQV3UiPWMszw=\""
+          "Value": "\"EwODhfXfiRVqPYPQ8gl8D4JxZXesxSUnnHNIoCUxpg0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Sep 2024 18:59:58 GMT"
+          "Value": "Sun, 15 Sep 2024 21:05:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7046,7 +7130,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mvgyqo9qxl"
+          "Value": "v5k8bwgits"
         },
         {
           "Name": "label",
@@ -7054,52 +7138,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Dqyen+lmYja3Gakj2Ls5+5mCsDVPfzfQQV3UiPWMszw="
-        }
-      ]
-    },
-    {
-      "Route": "html/Transactions.3uwr3tjudi.html",
-      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7100"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Bfo7hKZzqDCBTix0YGql9IKDBujTPSRpPpVJmYJ2U7c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 Aug 2024 12:49:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3uwr3tjudi"
-        },
-        {
-          "Name": "label",
-          "Value": "html/Transactions.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Bfo7hKZzqDCBTix0YGql9IKDBujTPSRpPpVJmYJ2U7c="
+          "Value": "sha256-EwODhfXfiRVqPYPQ8gl8D4JxZXesxSUnnHNIoCUxpg0="
         }
       ]
     },
@@ -7114,7 +7153,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7100"
+          "Value": "7227"
         },
         {
           "Name": "Content-Type",
@@ -7122,11 +7161,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Bfo7hKZzqDCBTix0YGql9IKDBujTPSRpPpVJmYJ2U7c=\""
+          "Value": "\"IrMf3mH2PCPv1SBDw7KNVuEteA9c0ujz9p7h4TBpjuY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 Aug 2024 12:49:34 GMT"
+          "Value": "Sun, 15 Sep 2024 21:16:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7136,7 +7175,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Bfo7hKZzqDCBTix0YGql9IKDBujTPSRpPpVJmYJ2U7c="
+          "Value": "sha256-IrMf3mH2PCPv1SBDw7KNVuEteA9c0ujz9p7h4TBpjuY="
+        }
+      ]
+    },
+    {
+      "Route": "html/Transactions.mu5970m0r4.html",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IrMf3mH2PCPv1SBDw7KNVuEteA9c0ujz9p7h4TBpjuY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:16:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mu5970m0r4"
+        },
+        {
+          "Name": "label",
+          "Value": "html/Transactions.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IrMf3mH2PCPv1SBDw7KNVuEteA9c0ujz9p7h4TBpjuY="
         }
       ]
     },
@@ -10341,6 +10425,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-6QxRqVIczhy9NXAVJg4lzbrBfrX9wpT3v1+NwwPeAyo="
+        }
+      ]
+    },
+    {
+      "Route": "img/bills.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\bills.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dd8O08FMP87Aa2pzoZ4AiaTAN9mxGRacmTv/46a1hfk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:22:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dd8O08FMP87Aa2pzoZ4AiaTAN9mxGRacmTv/46a1hfk="
+        }
+      ]
+    },
+    {
+      "Route": "img/bills.vp9fi0ner3.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\bills.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dd8O08FMP87Aa2pzoZ4AiaTAN9mxGRacmTv/46a1hfk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:22:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vp9fi0ner3"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bills.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dd8O08FMP87Aa2pzoZ4AiaTAN9mxGRacmTv/46a1hfk="
+        }
+      ]
+    },
+    {
+      "Route": "img/contact.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\contact.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "997287"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i4yHFjoOoXBDGkf1dPQ89SM8cOUpeKrV0y1sEfu7sGM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:23:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i4yHFjoOoXBDGkf1dPQ89SM8cOUpeKrV0y1sEfu7sGM="
+        }
+      ]
+    },
+    {
+      "Route": "img/contact.ndaww4666v.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\contact.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "997287"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i4yHFjoOoXBDGkf1dPQ89SM8cOUpeKrV0y1sEfu7sGM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:23:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ndaww4666v"
+        },
+        {
+          "Name": "label",
+          "Value": "img/contact.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i4yHFjoOoXBDGkf1dPQ89SM8cOUpeKrV0y1sEfu7sGM="
+        }
+      ]
+    },
+    {
+      "Route": "img/credit.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\credit.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "264741"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pnCg0GB+RMkWu3+QOcTk75tioaKJWBu7uZ4L/udawe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 20:54:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pnCg0GB+RMkWu3+QOcTk75tioaKJWBu7uZ4L/udawe0="
+        }
+      ]
+    },
+    {
+      "Route": "img/credit.mwh887uwj9.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\credit.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "264741"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pnCg0GB+RMkWu3+QOcTk75tioaKJWBu7uZ4L/udawe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 20:54:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mwh887uwj9"
+        },
+        {
+          "Name": "label",
+          "Value": "img/credit.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pnCg0GB+RMkWu3+QOcTk75tioaKJWBu7uZ4L/udawe0="
+        }
+      ]
+    },
+    {
+      "Route": "img/transaction.0b7xav1nj1.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\transaction.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "343509"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xGaAsDoehumloQRTDD/8/9mFqxQ/C193/hL34ZAiENY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:13:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0b7xav1nj1"
+        },
+        {
+          "Name": "label",
+          "Value": "img/transaction.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xGaAsDoehumloQRTDD/8/9mFqxQ/C193/hL34ZAiENY="
+        }
+      ]
+    },
+    {
+      "Route": "img/transaction.jpeg",
+      "AssetFile": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\transaction.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "343509"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xGaAsDoehumloQRTDD/8/9mFqxQ/C193/hL34ZAiENY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Sep 2024 21:13:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xGaAsDoehumloQRTDD/8/9mFqxQ/C193/hL34ZAiENY="
         }
       ]
     },

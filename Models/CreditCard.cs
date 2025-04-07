@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace BankingAPI.Models
 {
     public class CreditCard
     {
-        public int Id { get; set; }
+        [Key]
+        public int CreditId { get; set; }
 
         [Required]
         [MaxLength(16)]
@@ -17,10 +19,26 @@ namespace BankingAPI.Models
         public decimal CurrentBalance { get; set; }
 
         [Required]
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public int AccountId { get; set; }  // Link to Account
+        public Account Account { get; set; }  // Navigation property to Account
 
         public DateTime ExpiryDate { get; set; }
-        public string CardType { get; set; } // e.g., "Visa", "MasterCard"
+        public string CardType { get; set; } 
+
+        // Method to process charges and payments to the card
+        public void ProcessCharge(decimal amount)
+        {
+            if (CurrentBalance + amount > CreditLimit)
+            {
+                throw new InvalidOperationException("Credit limit exceeded");
+            }
+            CurrentBalance += amount;
+        }
+
+        public void ProcessPayment(decimal amount)
+        {
+            CurrentBalance -= amount;
+            Account.UpdateBalance(amount);  // Credit payment back to the account
+        }
     }
 }

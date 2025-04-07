@@ -301,6 +301,22 @@
       "PackagePath": "staticwebassets\\img\\banking_hero.jpeg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\bills.jpeg",
+      "PackagePath": "staticwebassets\\img\\bills.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\contact.jpeg",
+      "PackagePath": "staticwebassets\\img\\contact.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\credit.jpeg",
+      "PackagePath": "staticwebassets\\img\\credit.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\transaction.jpeg",
+      "PackagePath": "staticwebassets\\img\\transaction.jpeg"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\account.js",
       "PackagePath": "staticwebassets\\js\\account.js"
     },

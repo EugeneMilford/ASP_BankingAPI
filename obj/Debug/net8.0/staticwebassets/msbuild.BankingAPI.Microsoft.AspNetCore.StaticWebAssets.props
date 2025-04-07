@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>eak3nzye8m</Fingerprint>
-      <Integrity>ivPTrta26b2YJhqG7RshfYJt4A0w1yQ2U+eIcsDfBdI=</Integrity>
+      <Fingerprint>nut3l6b03t</Fingerprint>
+      <Integrity>33YptgozX/ZQ+pdkadPHg/+HZmOb12scz53HGwOUuDw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Banking.css'))</OriginalItemSpec>
@@ -606,8 +606,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5szvughfuk</Fingerprint>
-      <Integrity>G0tqrqvohiDdsq5LUQ3WWSoUJ1606xz/cdX6eLzIKD8=</Integrity>
+      <Fingerprint>qy25byx4li</Fingerprint>
+      <Integrity>vp7htRQtkiS6Jtmu0gJbAWlfk62NWBkIipBKQ3JKpIs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Accounts.html'))</OriginalItemSpec>
@@ -696,8 +696,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gugt2cf438</Fingerprint>
-      <Integrity>eCMqpNX+j4ufPVxjkpU0jMinJ8YZfSoJwKf4223UzXE=</Integrity>
+      <Fingerprint>wjnmwk9udq</Fingerprint>
+      <Integrity>vCDBhwmdfFNBaMDoRO3dL0hWyP72cD67LZk7lG1TEWs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Bills.html'))</OriginalItemSpec>
@@ -786,8 +786,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5ngjqxrcug</Fingerprint>
-      <Integrity>AQlnal+3GDJnqE7ih60m2pvkxVhvsXSv1eT7pb0OlmI=</Integrity>
+      <Fingerprint>6eygacykp3</Fingerprint>
+      <Integrity>HixO1Z1R5xEi4qufuXByMMH4icL2xjpIm1iNh/uG1tY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Contact.html'))</OriginalItemSpec>
@@ -804,8 +804,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zmdsm0lm3y</Fingerprint>
-      <Integrity>9SVHlPXvGG7aOlqCk/DF5vYzjO/OTrnd6qfOwImcpzg=</Integrity>
+      <Fingerprint>89cpvba3l2</Fingerprint>
+      <Integrity>tAownlTb3RzF/zDYm6fWAwYzLVHZkLaadM0hctPiYtc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\CreditCards.html'))</OriginalItemSpec>
@@ -894,8 +894,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mvgyqo9qxl</Fingerprint>
-      <Integrity>Dqyen+lmYja3Gakj2Ls5+5mCsDVPfzfQQV3UiPWMszw=</Integrity>
+      <Fingerprint>v5k8bwgits</Fingerprint>
+      <Integrity>EwODhfXfiRVqPYPQ8gl8D4JxZXesxSUnnHNIoCUxpg0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\index.html'))</OriginalItemSpec>
@@ -912,8 +912,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3uwr3tjudi</Fingerprint>
-      <Integrity>Bfo7hKZzqDCBTix0YGql9IKDBujTPSRpPpVJmYJ2U7c=</Integrity>
+      <Fingerprint>mu5970m0r4</Fingerprint>
+      <Integrity>IrMf3mH2PCPv1SBDw7KNVuEteA9c0ujz9p7h4TBpjuY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Transactions.html'))</OriginalItemSpec>
@@ -1133,6 +1133,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\banking_hero.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\bills.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BankingAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BankingAPI</BasePath>
+      <RelativePath>img/bills.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vp9fi0ner3</Fingerprint>
+      <Integrity>Dd8O08FMP87Aa2pzoZ4AiaTAN9mxGRacmTv/46a1hfk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\bills.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\contact.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BankingAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BankingAPI</BasePath>
+      <RelativePath>img/contact.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ndaww4666v</Fingerprint>
+      <Integrity>i4yHFjoOoXBDGkf1dPQ89SM8cOUpeKrV0y1sEfu7sGM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\contact.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\credit.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BankingAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BankingAPI</BasePath>
+      <RelativePath>img/credit.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mwh887uwj9</Fingerprint>
+      <Integrity>pnCg0GB+RMkWu3+QOcTk75tioaKJWBu7uZ4L/udawe0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\credit.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\transaction.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BankingAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BankingAPI</BasePath>
+      <RelativePath>img/transaction.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0b7xav1nj1</Fingerprint>
+      <Integrity>xGaAsDoehumloQRTDD/8/9mFqxQ/C193/hL34ZAiENY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\transaction.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\account.js'))">
       <SourceType>Package</SourceType>
