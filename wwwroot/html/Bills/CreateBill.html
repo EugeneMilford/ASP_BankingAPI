@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bill Payment</title>
+    <script src="../../js/billPayment.js" defer></script>
+</head>
+<body>
+    <h1>Create Bill Payment</h1>
+    <form id="createBillPaymentForm">
+        <label for="accountId">Account ID:</label>
+        <input type="number" id="accountId" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required><br><br>
+
+        <label for="paymentDate">Payment Date:</label>
+        <input type="date" id="paymentDate" required><br><br>
+
+        <label for="biller">Biller:</label>
+        <input type="text" id="biller" required><br><br>
+
+        <label for="referenceNumber">Reference Number:</label>
+        <input type="text" id="referenceNumber" required><br><br>
+
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>

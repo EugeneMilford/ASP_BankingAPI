@@ -1,0 +1,240 @@
+﻿:root {
+    --primary: #355EFC;
+    --secondary: #E93C05;
+    --tertiary: #555555;
+    --light: #DFE4FD;
+    --dark: #011A41;
+}
+
+/*** Navbar ***/
+.fixed-top {
+    transition: .5s;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 5px 5px;
+    color: var(--tertiary);
+    font-weight: 500;
+    outline: none;
+}
+
+    .navbar .navbar-nav .nav-link:hover,
+    .navbar .navbar-nav .nav-link.active {
+        color: var(--primary);
+    }
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        margin-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, .07);
+        background: #FFFFFF;
+    }
+
+        .navbar .navbar-nav .nav-link {
+            padding: 10px 0;
+        }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Hero Section ***/
+.hero-section {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Adjust height as needed */
+    max-height: 90vh; /* Example: make the image height 80% of the viewport height */
+}
+
+.hero-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        position: relative;
+        min-height: 450px;
+    }
+
+    .hero-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-height: none;
+    }
+}
+
+.page-header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: url(../img/header.jpg) top left no-repeat;
+    background-size: cover;
+}
+
+    .page-header .breadcrumb-item,
+    .page-header .breadcrumb-item a {
+        font-weight: 500;
+    }
+
+        .page-header .breadcrumb-item + .breadcrumb-item::before {
+            color: var(--tertiary);
+        }
+
+/*** Footer ***/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*----- Breadcrumbs ------*/
+
+.account-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/acc.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+    .account-breadcrumb .breadcrumb {
+        position: relative;
+    }
+
+        .account-breadcrumb .breadcrumb .breadcrumb-item a {
+            color: var(--bs-white);
+        }
+
+.credit-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/credit.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+    .credit-breadcrumb .breadcrumb {
+        position: relative;
+    }
+
+        .credit-breadcrumb .breadcrumb .breadcrumb-item a {
+            color: var(--bs-white);
+        }
+
+.transaction-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/transaction.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+    .transaction-breadcrumb .breadcrumb {
+        position: relative;
+    }
+
+        .transaction-breadcrumb .breadcrumb .breadcrumb-item a {
+            color: var(--bs-white);
+        }
+
+.contact-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/contact.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+    .contact-breadcrumb .breadcrumb {
+        position: relative;
+    }
+
+        .contact-breadcrumb .breadcrumb .breadcrumb-item a {
+            color: var(--bs-white);
+        }
+
+.bills-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bills.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+    .bills-breadcrumb .breadcrumb {
+        position: relative;
+    }
+
+        .bills-breadcrumb .breadcrumb .breadcrumb-item a {
+            color: var(--bs-white);
+        }
