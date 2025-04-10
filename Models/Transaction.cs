@@ -1,14 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace BankingAPI.Models
 {
     public class Transaction
     {
-        public int Id { get; set; }
+        [Key]
+        public int TransactionId { get; set; }
 
         [Required]
-        public int AccountId { get; set; }
-        public Account Account { get; set; }
+        public int AccountId { get; set; }  // Link to Account
+        public Account Account { get; set; }  // Navigation property to Account
 
         [Required]
         public decimal Amount { get; set; }
@@ -18,5 +20,41 @@ namespace BankingAPI.Models
 
         public string Type { get; set; } // "Credit" or "Debit"
         public string Description { get; set; }
+
+        // Method to process the transaction and update account balance
+        public void ProcessTransaction()
+        {
+            if (Type == "Debit")
+            {
+                Account.UpdateBalance(-Amount);  // Deduct from account
+            }
+            else if (Type == "Credit")
+            {
+                Account.UpdateBalance(Amount);   // Add to account
+            }
+        }
     }
 }
+
+//using System.ComponentModel.DataAnnotations;
+
+//namespace BankingAPI.Models
+//{
+//    public class Transaction
+//    {
+//        public int Id { get; set; }
+
+//        [Required]
+//        public int AccountId { get; set; }
+//        public Account Account { get; set; }
+
+//        [Required]
+//        public decimal Amount { get; set; }
+
+//        [Required]
+//        public DateTime Date { get; set; }
+
+//        public string Type { get; set; } // "Credit" or "Debit"
+//        public string Description { get; set; }
+//    }
+//}

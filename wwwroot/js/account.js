@@ -1,112 +1,165 @@
-﻿const apiBaseUrl = 'https://localhost:7256/api/Accounts';
+﻿async function loadAccountsTable() {
+    try {
+        const accounts = await AccountService.getAllAccounts();
+        const tableBody = document.getElementById('accountsTableBody');
+        if (!tableBody) return;
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Load accounts
-    if (document.getElementById('accountsTable')) {
-        fetch(apiBaseUrl)
-            .then(response => response.json())
-            .then(data => {
-                const tableBody = document.querySelector('#accountsTable tbody');
-                data.forEach(account => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td>${account.id}</td>
-                        <td>${account.accountNumber}</td>
-                        <td>${account.balance}</td>
-                        <td>${account.accountType}</td>
-                        <td>
-                            <a href="Accounts/AccountDetails.html?id=${account.id}">Details</a>
-                            <a href="Accounts/EditAccount.html?id=${account.id}">Edit</a>
-                            <a href="Accounts/DeleteAccount.html?id=${account.id}">Delete</a>
-                        </td>
-                    `;
-                    tableBody.appendChild(row);
-                });
-            });
-    }
+        tableBody.innerHTML = '';
 
-    // Create account
-    if (document.getElementById('createAccountForm')) {
-        document.getElementById('createAccountForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const accountData = {
-                accountNumber: document.getElementById('accountNumber').value,
-                balance: parseFloat(document.getElementById('balance').value),
-                accountType: document.getElementById('accountType').value
-            };
-            fetch(apiBaseUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(accountData)
-            })
-                .then(response => response.json())
-                .then(() => window.location.href = '../Accounts.html');
+        accounts.forEach(account => {
+            const row = `
+                <tr data-account-id="${account.id}">
+                    <td>${account.accountNumber}</td>
+                    <td class="account-balance">$${account.balance.toFixed(2)}</td>
+                    <td>${account.accountType}</td>
+                    <td>${new Date(account.createdDate).toLocaleDateString()}</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm me-2" onclick="handleEditAccount(${account.id})">
+                            Edit
+                        </button>
+                        <button class="btn btn-danger btn-sm" onclick="handleDeleteAccount(${account.id})">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            `;
+            tableBody.insertAdjacentHTML('beforeend', row);
         });
+
+        // Update total balance after loading accounts
+        updateTotalBalance();
+    } catch (error) {
+        showError('Failed to load accounts');
     }
+}
 
-    // Load account details for edit
-    if (document.getElementById('editAccountForm')) {
-        const accountId = new URLSearchParams(window.location.search).get('id');
-        fetch(`${apiBaseUrl}/${accountId}`)
-            .then(response => response.json())
-            .then(account => {
-                document.getElementById('accountId').value = account.id;
-                document.getElementById('accountNumber').value = account.accountNumber;
-                document.getElementById('balance').value = account.balance;
-                document.getElementById('accountType').value = account.accountType;
-            });
+// Calculate and update total balance
+async function updateTotalBalance() {
+    try {
+        const accounts = await AccountService.getAllAccounts();
+        const totalBalance = accounts.reduce((sum, account) => sum + account.balance, 0);
 
-        document.getElementById('editAccountForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const accountData = {
-                id: document.getElementById('accountId').value,
-                accountNumber: document.getElementById('accountNumber').value,
-                balance: parseFloat(document.getElementById('balance').value),
-                accountType: document.getElementById('accountType').value
-            };
-            fetch(`${apiBaseUrl}/${accountData.id}`, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(accountData)
-            })
-                .then(response => response.json())
-                .then(() => window.location.href = '../Accounts.html');
-        });
+        // Update the total balance display
+        const totalBalanceElement = document.getElementById('totalBalance');
+        if (totalBalanceElement) {
+            totalBalanceElement.textContent = `$${totalBalance.toFixed(2)}`;
+        }
+
+        // Update last updated timestamp
+        const lastUpdatedElement = document.getElementById('lastUpdated');
+        if (lastUpdatedElement) {
+            const now = new Date();
+            lastUpdatedElement.textContent = now.toLocaleTimeString();
+        }
+
+        return totalBalance;
+    } catch (error) {
+        console.error('Error updating total balance:', error);
+        showError('Failed to update balance');
+        return 0;
     }
+}
 
-    // Delete account
-    if (document.getElementById('deleteAccountForm')) {
-        const accountId = new URLSearchParams(window.location.search).get('id');
-        document.getElementById('accountId').value = accountId;
+// Manual refresh function for the refresh button
+function refreshBalances() {
+    loadAccountsTable();
+}
 
-        document.getElementById('deleteAccountForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            fetch(`${apiBaseUrl}/${accountId}`, {
-                method: 'DELETE'
-            })
-                .then(() => window.location.href = '../Accounts.html');
-        });
+// Handle account creation
+async function handleCreateAccount(event) {
+    event.preventDefault();
+
+    const accountData = {
+        accountNumber: document.getElementById('accountNumber').value,
+        balance: parseFloat(document.getElementById('balance').value),
+        accountType: document.getElementById('accountType').value,
+        createdDate: new Date().toISOString()
+    };
+
+    try {
+        await AccountService.createAccount(accountData);
+        document.getElementById('accountForm').reset();
+        showSuccess('Account created successfully');
+        loadAccountsTable();
+    } catch (error) {
+        showError('Failed to create account');
     }
+}
 
-    // Load account details for view
-    if (document.getElementById('accountDetails')) {
-        const accountId = new URLSearchParams(window.location.search).get('id');
-        fetch(`${apiBaseUrl}/${accountId}`)
-            .then(response => response.json())
-            .then(account => {
-                const detailsDiv = document.getElementById('accountDetails');
-                detailsDiv.innerHTML = `
-                    <p><strong>Id:</strong> ${account.id}</p>
-                    <p><strong>Account Number:</strong> ${account.accountNumber}</p>
-                    <p><strong>Balance:</strong> ${account.balance}</p>
-                    <p><strong>Account Type:</strong> ${account.accountType}</p>
-                `;
-                document.getElementById('editLink').href = `EditAccount.html?id=${account.id}`;
-                document.getElementById('deleteLink').href = `DeleteAccount.html?id=${account.id}`;
-            });
+// Handle account editing
+async function handleEditAccount(id) {
+    try {
+        const account = await AccountService.getAccount(id);
+
+        // Populate edit modal
+        document.getElementById('editAccountId').value = account.id;
+        document.getElementById('editAccountNumber').value = account.accountNumber;
+        document.getElementById('editBalance').value = account.balance;
+        document.getElementById('editAccountType').value = account.accountType;
+
+        // Show modal
+        const editModal = new bootstrap.Modal(document.getElementById('editAccountModal'));
+        editModal.show();
+
+        // Set up save button handler
+        document.getElementById('saveEditButton').onclick = async () => {
+            await saveEditedAccount(account.id);
+            editModal.hide();
+        };
+    } catch (error) {
+        showError('Failed to load account details');
     }
-});
+}
+
+// Save edited account
+async function saveEditedAccount(id) {
+    const accountData = {
+        id: id,
+        accountNumber: document.getElementById('editAccountNumber').value,
+        balance: parseFloat(document.getElementById('editBalance').value),
+        accountType: document.getElementById('editAccountType').value
+    };
+
+    try {
+        await AccountService.updateAccount(id, accountData);
+        showSuccess('Account updated successfully');
+        loadAccountsTable();
+        updateTotalBalance();
+    } catch (error) {
+        showError('Failed to update account');
+    }
+}
+
+// Handle account deletion
+async function handleDeleteAccount(id) {
+    if (!confirm('Are you sure you want to delete this account?')) return;
+
+    try {
+        await AccountService.deleteAccount(id);
+        showSuccess('Account deleted successfully');
+        loadAccountsTable();
+        updateTotalBalance();
+    } catch (error) {
+        showError('Failed to delete account');
+    }
+}
+
+// Update a single account's balance in the UI
+function updateAccountBalanceInUI(accountId, newBalance) {
+    const row = document.querySelector(`tr[data-account-id="${accountId}"]`);
+    if (row) {
+        const balanceCell = row.querySelector('.account-balance');
+        if (balanceCell) {
+            balanceCell.textContent = `$${newBalance.toFixed(2)}`;
+        }
+    }
+}
+
+// Utility functions for showing notifications
+function showSuccess(message) {
+    alert(message); // You can replace this with a better notification system
+}
+
+function showError(message) {
+    alert(message); // You can replace this with a better notification system
+}

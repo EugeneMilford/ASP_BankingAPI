@@ -17,7 +17,7 @@ namespace BankingAPI.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.7")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -44,16 +44,16 @@ namespace BankingAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("account", (string)null);
+                    b.ToTable("accounts");
                 });
 
             modelBuilder.Entity("BankingAPI.Models.BillPayment", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("BillId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BillId"));
 
                     b.Property<int>("AccountId")
                         .HasColumnType("int");
@@ -70,20 +70,23 @@ namespace BankingAPI.Migrations
                     b.Property<string>("ReferenceNumber")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("BillId");
 
                     b.HasIndex("AccountId");
 
-                    b.ToTable("bills", (string)null);
+                    b.ToTable("billPayments");
                 });
 
             modelBuilder.Entity("BankingAPI.Models.CreditCard", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("CreditId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CreditId"));
+
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
 
                     b.Property<string>("CardNumber")
                         .IsRequired()
@@ -102,23 +105,142 @@ namespace BankingAPI.Migrations
                     b.Property<DateTime>("ExpiryDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
+                    b.HasKey("CreditId");
+
+                    b.HasIndex("AccountId");
+
+                    b.ToTable("creditCards");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.Investment", b =>
+                {
+                    b.Property<int>("InvestmentId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InvestmentId"));
 
-                    b.HasIndex("UserId");
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
 
-                    b.ToTable("credit", (string)null);
+                    b.Property<decimal>("CurrentValue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("InvestmentAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("InvestmentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InvestmentType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("InvestmentId");
+
+                    b.HasIndex("AccountId");
+
+                    b.ToTable("investments");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.Loan", b =>
+                {
+                    b.Property<int>("LoanId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LoanId"));
+
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("InterestRate")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("IsLoanPaidOff")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("LoanAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("LoanEndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("LoanStartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("RemainingAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("LoanId");
+
+                    b.HasIndex("AccountId");
+
+                    b.ToTable("loans");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.PersonalFinanceTool", b =>
+                {
+                    b.Property<int>("PersonalId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PersonalId"));
+
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Budget")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Expenses")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("PersonalId");
+
+                    b.HasIndex("AccountId");
+
+                    b.ToTable("personalFinance");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.SupportTicket", b =>
+                {
+                    b.Property<int>("SupportId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SupportId"));
+
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsResolved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("IssueDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Resolution")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SupportId");
+
+                    b.HasIndex("AccountId");
+
+                    b.ToTable("supportTickets");
                 });
 
             modelBuilder.Entity("BankingAPI.Models.Transaction", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TransactionId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransactionId"));
 
                     b.Property<int>("AccountId")
                         .HasColumnType("int");
@@ -135,65 +257,58 @@ namespace BankingAPI.Migrations
                     b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("TransactionId");
 
                     b.HasIndex("AccountId");
 
-                    b.ToTable("transaction", (string)null);
-                });
-
-            modelBuilder.Entity("BankingAPI.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PasswordHash")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("users", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Email = "john@example.com",
-                            FirstName = "John",
-                            LastName = "Doe",
-                            PasswordHash = "hpassword1",
-                            Username = "johndoe"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Email = "jane@example.com",
-                            FirstName = "Jane",
-                            LastName = "Smith",
-                            PasswordHash = "hpassword2",
-                            Username = "janesmith"
-                        });
+                    b.ToTable("transactions");
                 });
 
             modelBuilder.Entity("BankingAPI.Models.BillPayment", b =>
+                {
+                    b.HasOne("BankingAPI.Models.Account", "Account")
+                        .WithMany("BillPayments")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.CreditCard", b =>
+                {
+                    b.HasOne("BankingAPI.Models.Account", "Account")
+                        .WithMany("CreditCards")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.Investment", b =>
+                {
+                    b.HasOne("BankingAPI.Models.Account", "Account")
+                        .WithMany("Investments")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.Loan", b =>
+                {
+                    b.HasOne("BankingAPI.Models.Account", "Account")
+                        .WithMany("Loans")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("BankingAPI.Models.PersonalFinanceTool", b =>
                 {
                     b.HasOne("BankingAPI.Models.Account", "Account")
                         .WithMany()
@@ -204,15 +319,15 @@ namespace BankingAPI.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("BankingAPI.Models.CreditCard", b =>
+            modelBuilder.Entity("BankingAPI.Models.SupportTicket", b =>
                 {
-                    b.HasOne("BankingAPI.Models.User", "User")
+                    b.HasOne("BankingAPI.Models.Account", "Account")
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("Account");
                 });
 
             modelBuilder.Entity("BankingAPI.Models.Transaction", b =>
@@ -228,6 +343,14 @@ namespace BankingAPI.Migrations
 
             modelBuilder.Entity("BankingAPI.Models.Account", b =>
                 {
+                    b.Navigation("BillPayments");
+
+                    b.Navigation("CreditCards");
+
+                    b.Navigation("Investments");
+
+                    b.Navigation("Loans");
+
                     b.Navigation("Transactions");
                 });
 #pragma warning restore 612, 618

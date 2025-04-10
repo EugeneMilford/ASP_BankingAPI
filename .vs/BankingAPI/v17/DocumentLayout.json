@@ -3,16 +3,104 @@
   "WorkspaceRootPath": "D:\\Projects\\ASP NET REST API\\BankingAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\data\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:data\\bankingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\accounts\\createaccount.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\accounts\\createaccount.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\creditcards\\createcreditcard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\creditcards\\createcreditcard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\accounts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\accounts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\js\\account.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\js\\account.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\creditcards.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\creditcards.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\js\\creditcard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\js\\creditcard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\js\\billpayment.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\js\\billpayment.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\bills.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\bills.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\models\\billpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:models\\billpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\migrations\\20250409161709_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:migrations\\20250409161709_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\transactions.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\transactions.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\investments.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\investments.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\loans.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\loans.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\supporttickets.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\supporttickets.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\financetools.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\financetools.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\controllers\\creditcardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:controllers\\creditcardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,60 +111,20 @@
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:models\\supportticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\models\\personalfinancetool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:models\\personalfinancetool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\models\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:models\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\bills.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\bills.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\css\\banking.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\css\\banking.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\bankingapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:bankingapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\creditcards.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\creditcards.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\transactions.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\transactions.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\accounts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\accounts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\js\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\js\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\js\\billpayment.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\js\\billpayment.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\js\\creditcard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\js\\creditcard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -85,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\wwwroot\\html\\accounts\\editaccount.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:wwwroot\\html\\accounts\\editaccount.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|d:\\projects\\asp net rest api\\bankingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F3A5175-E148-44E3-A894-3DAB6A732D4B}|BankingAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,37 +142,288 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreditCardsController.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Controllers\\CreditCardsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CreditCardsController.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Controllers\\CreditCardsController.cs",
+              "RelativeToolTip": "Controllers\\CreditCardsController.cs",
+              "ViewState": "AgIAAJABAAAAAAAAAAAuwKwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:24:41.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "account.js",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\account.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\account.js",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\account.js",
+              "RelativeToolTip": "wwwroot\\js\\account.js",
+              "ViewState": "AgIAAI4AAAAAAAAAAADwv6QAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-09T16:05:16.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\index.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
+              "RelativeToolTip": "wwwroot\\html\\index.html",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-12T18:39:16.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-12T18:33:52.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T12:24:48.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BankingContext.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Data\\BankingContext.cs",
               "RelativeDocumentMoniker": "Data\\BankingContext.cs",
               "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Data\\BankingContext.cs",
               "RelativeToolTip": "Data\\BankingContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvyEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T21:00:37.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Accounts.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\Accounts.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
+              "RelativeToolTip": "wwwroot\\html\\Accounts.html",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAKUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-12T11:00:22.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Transaction.cs",
-              "RelativeDocumentMoniker": "Models\\Transaction.cs",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Transaction.cs",
-              "RelativeToolTip": "Models\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Title": "CreateAccount.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\CreateAccount.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\Accounts\\CreateAccount.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\CreateAccount.html",
+              "RelativeToolTip": "wwwroot\\html\\Accounts\\CreateAccount.html",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAALYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-09T19:20:24.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "billPayment.js",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\billPayment.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\billPayment.js",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\billPayment.js",
+              "RelativeToolTip": "wwwroot\\js\\billPayment.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-07T16:05:00.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Models\\Account.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Account.cs",
+              "RelativeToolTip": "Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T20:59:38.349Z",
+              "WhenOpened": "2024-07-31T08:24:16.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CreateCreditCard.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards\\CreateCreditCard.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\CreditCards\\CreateCreditCard.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards\\CreateCreditCard.html",
+              "RelativeToolTip": "wwwroot\\html\\CreditCards\\CreateCreditCard.html",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAAADMBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-09T19:19:32.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreditCards.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\CreditCards.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards.html",
+              "RelativeToolTip": "wwwroot\\html\\CreditCards.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-12T12:22:12.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Bills.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\Bills.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
+              "RelativeToolTip": "wwwroot\\html\\Bills.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-15T21:26:43.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "creditCard.js",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\creditCard.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\creditCard.js",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\creditCard.js",
+              "RelativeToolTip": "wwwroot\\js\\creditCard.js",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAHkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-07T16:00:12.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Investments.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Investments.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\Investments.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Investments.html",
+              "RelativeToolTip": "wwwroot\\html\\Investments.html",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAFsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-09T15:39:25.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BillPayment.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\BillPayment.cs",
+              "RelativeDocumentMoniker": "Models\\BillPayment.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\BillPayment.cs",
+              "RelativeToolTip": "Models\\BillPayment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwB8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T18:39:33.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20250409161709_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Migrations\\20250409161709_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250409161709_InitialCreate.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Migrations\\20250409161709_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250409161709_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:17:10.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "supportTickets.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\supportTickets.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\supportTickets.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\supportTickets.html",
+              "RelativeToolTip": "wwwroot\\html\\supportTickets.html",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-09T15:39:44.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountsController.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:07:38.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Transactions.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\Transactions.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
+              "RelativeToolTip": "wwwroot\\html\\Transactions.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-12T11:13:12.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Loans.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Loans.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\Loans.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Loans.html",
+              "RelativeToolTip": "wwwroot\\html\\Loans.html",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-09T15:39:35.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FinanceTools.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\FinanceTools.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\FinanceTools.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\FinanceTools.html",
+              "RelativeToolTip": "wwwroot\\html\\FinanceTools.html",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAF4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-09T15:38:50.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "SupportTicket.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\SupportTicket.cs",
               "RelativeDocumentMoniker": "Models\\SupportTicket.cs",
@@ -136,25 +431,47 @@
               "RelativeToolTip": "Models\\SupportTicket.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T20:58:41.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T20:58:41.627Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PersonalFinanceTool.cs",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\PersonalFinanceTool.cs",
-              "RelativeDocumentMoniker": "Models\\PersonalFinanceTool.cs",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\PersonalFinanceTool.cs",
-              "RelativeToolTip": "Models\\PersonalFinanceTool.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "Contact.html",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Contact.html",
+              "RelativeDocumentMoniker": "wwwroot\\html\\Contact.html",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Contact.html",
+              "RelativeToolTip": "wwwroot\\html\\Contact.html",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAC8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-12T13:00:02.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "Models\\Transaction.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Transaction.cs",
+              "RelativeToolTip": "Models\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T20:57:29.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T20:59:38.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 23,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransactionsController.cs",
+              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAAAHsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:10:01.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Loan.cs",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Loan.cs",
               "RelativeDocumentMoniker": "Models\\Loan.cs",
@@ -162,24 +479,11 @@
               "RelativeToolTip": "Models\\Loan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T20:56:05.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T20:56:05.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-12T18:33:52.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 24,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
@@ -187,74 +491,23 @@
               "RelativeToolTip": "ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-20T09:41:09.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T09:41:09.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 29,
               "Title": "BankingAPI.csproj",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\BankingAPI.csproj",
               "RelativeDocumentMoniker": "BankingAPI.csproj",
               "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\BankingAPI.csproj",
               "RelativeToolTip": "BankingAPI.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-08-20T09:33:08.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Account.cs",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Account.cs",
-              "RelativeDocumentMoniker": "Models\\Account.cs",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Models\\Account.cs",
-              "RelativeToolTip": "Models\\Account.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T08:24:16.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
-              "RelativeDocumentMoniker": "wwwroot\\html\\index.html",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
-              "RelativeToolTip": "wwwroot\\html\\index.html",
-              "ViewState": "AgIAAHMBAAAAAAAAAAAAAHQBAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-12T18:39:16.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Contact.html",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Contact.html",
-              "RelativeDocumentMoniker": "wwwroot\\html\\Contact.html",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Contact.html",
-              "RelativeToolTip": "wwwroot\\html\\Contact.html",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T13:00:02.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreditCards.html",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards.html",
-              "RelativeDocumentMoniker": "wwwroot\\html\\CreditCards.html",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\CreditCards.html",
-              "RelativeToolTip": "wwwroot\\html\\CreditCards.html",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAADAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T12:22:12.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 28,
               "Title": "Banking.css",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\Banking.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\Banking.css",
@@ -266,43 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Bills.html",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
-              "RelativeDocumentMoniker": "wwwroot\\html\\Bills.html",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
-              "RelativeToolTip": "wwwroot\\html\\Bills.html",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAFwAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-15T21:26:43.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Transactions.html",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
-              "RelativeDocumentMoniker": "wwwroot\\html\\Transactions.html",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
-              "RelativeToolTip": "wwwroot\\html\\Transactions.html",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T11:13:12.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Accounts.html",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
-              "RelativeDocumentMoniker": "wwwroot\\html\\Accounts.html",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
-              "RelativeToolTip": "wwwroot\\html\\Accounts.html",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T11:00:22.749Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "user.js",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\user.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\user.js",
@@ -314,43 +531,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "billPayment.js",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\billPayment.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\billPayment.js",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\billPayment.js",
-              "RelativeToolTip": "wwwroot\\js\\billPayment.js",
-              "ViewState": "AgIAAAYAAAAAAAAAACBjwHkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T16:05:00.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "creditCard.js",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\creditCard.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\creditCard.js",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\creditCard.js",
-              "RelativeToolTip": "wwwroot\\js\\creditCard.js",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAiwHkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T16:00:12.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAACBjwBgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBpwBgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-29T06:54:09.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "EditAccount.html",
               "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\EditAccount.html",
               "RelativeDocumentMoniker": "wwwroot\\html\\Accounts\\EditAccount.html",
@@ -359,22 +552,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-07-27T13:32:11.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Projects\\ASP NET REST API\\BankingAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T12:24:48.722Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             }
           ]
         }

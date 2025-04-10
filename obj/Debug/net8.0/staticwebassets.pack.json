@@ -1,184 +1,420 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\gmilf\\.nuget\\packages\\bootstrap\\5.3.5\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\Banking.css",
       "PackagePath": "staticwebassets\\css\\Banking.css"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\css\\Banking.css",
+      "PackagePath": "staticwebassets\\css\\css\\Banking.css"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Accounts.html",
+      "PackagePath": "staticwebassets\\css\\html\\Accounts.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Accounts\\AccountDetails.html",
+      "PackagePath": "staticwebassets\\css\\html\\Accounts\\AccountDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Accounts\\CreateAccount.html",
+      "PackagePath": "staticwebassets\\css\\html\\Accounts\\CreateAccount.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Accounts\\DeleteAccount.html",
+      "PackagePath": "staticwebassets\\css\\html\\Accounts\\DeleteAccount.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Accounts\\EditAccount.html",
+      "PackagePath": "staticwebassets\\css\\html\\Accounts\\EditAccount.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Auth\\login.html",
+      "PackagePath": "staticwebassets\\css\\html\\Auth\\login.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Auth\\register.html",
+      "PackagePath": "staticwebassets\\css\\html\\Auth\\register.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Bills.html",
+      "PackagePath": "staticwebassets\\css\\html\\Bills.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Bills\\BillDetails.html",
+      "PackagePath": "staticwebassets\\css\\html\\Bills\\BillDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Bills\\CreateBill.html",
+      "PackagePath": "staticwebassets\\css\\html\\Bills\\CreateBill.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Bills\\DeleteBill.html",
+      "PackagePath": "staticwebassets\\css\\html\\Bills\\DeleteBill.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Bills\\EditBill.html",
+      "PackagePath": "staticwebassets\\css\\html\\Bills\\EditBill.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Contact.html",
+      "PackagePath": "staticwebassets\\css\\html\\Contact.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\CreditCards.html",
+      "PackagePath": "staticwebassets\\css\\html\\CreditCards.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\CreditCards\\CreateCreditCard.html",
+      "PackagePath": "staticwebassets\\css\\html\\CreditCards\\CreateCreditCard.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\CreditCards\\CreditCardDetails.html",
+      "PackagePath": "staticwebassets\\css\\html\\CreditCards\\CreditCardDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\CreditCards\\DeleteCreditCard.html",
+      "PackagePath": "staticwebassets\\css\\html\\CreditCards\\DeleteCreditCard.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\CreditCards\\EditCreditCard.html",
+      "PackagePath": "staticwebassets\\css\\html\\CreditCards\\EditCreditCard.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\FinanceTools.html",
+      "PackagePath": "staticwebassets\\css\\html\\FinanceTools.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\FinanceTools\\CreateFinanceTool.html",
+      "PackagePath": "staticwebassets\\css\\html\\FinanceTools\\CreateFinanceTool.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\FinanceTools\\ViewFinanceTool.html",
+      "PackagePath": "staticwebassets\\css\\html\\FinanceTools\\ViewFinanceTool.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Investments.html",
+      "PackagePath": "staticwebassets\\css\\html\\Investments.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Investments\\CreateInvestment.html",
+      "PackagePath": "staticwebassets\\css\\html\\Investments\\CreateInvestment.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Investments\\ViewInvestment.html",
+      "PackagePath": "staticwebassets\\css\\html\\Investments\\ViewInvestment.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Loans.html",
+      "PackagePath": "staticwebassets\\css\\html\\Loans.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Loans\\CreateLoan.html",
+      "PackagePath": "staticwebassets\\css\\html\\Loans\\CreateLoan.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Loans\\LoanDetails.html",
+      "PackagePath": "staticwebassets\\css\\html\\Loans\\LoanDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\SupportTickets\\CreateTicket.html",
+      "PackagePath": "staticwebassets\\css\\html\\SupportTickets\\CreateTicket.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\SupportTickets\\ViewTicket.html",
+      "PackagePath": "staticwebassets\\css\\html\\SupportTickets\\ViewTicket.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Transactions.html",
+      "PackagePath": "staticwebassets\\css\\html\\Transactions.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Transactions\\CreateTransaction.html",
+      "PackagePath": "staticwebassets\\css\\html\\Transactions\\CreateTransaction.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Transactions\\DeleteTransaction.html",
+      "PackagePath": "staticwebassets\\css\\html\\Transactions\\DeleteTransaction.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Transactions\\EditTransaction.html",
+      "PackagePath": "staticwebassets\\css\\html\\Transactions\\EditTransaction.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Transactions\\TransactionDetails.html",
+      "PackagePath": "staticwebassets\\css\\html\\Transactions\\TransactionDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\Welcome.html",
+      "PackagePath": "staticwebassets\\css\\html\\Welcome.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\index.html",
+      "PackagePath": "staticwebassets\\css\\html\\index.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\html\\supportTickets.html",
+      "PackagePath": "staticwebassets\\css\\html\\supportTickets.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\acc.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\acc.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\banking01.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\banking01.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\banking02.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\banking02.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\banking03.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\banking03.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\banking04.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\banking04.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\banking05.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\banking05.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\banking06.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\banking06.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\banking_hero.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\banking_hero.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\bills.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\bills.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\contact.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\contact.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\credit.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\credit.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\img\\transaction.jpeg",
+      "PackagePath": "staticwebassets\\css\\img\\transaction.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\FinanceTools.js",
+      "PackagePath": "staticwebassets\\css\\js\\FinanceTools.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\account.js",
+      "PackagePath": "staticwebassets\\css\\js\\account.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\billPayment.js",
+      "PackagePath": "staticwebassets\\css\\js\\billPayment.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\creditCard.js",
+      "PackagePath": "staticwebassets\\css\\js\\creditCard.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\investments.js",
+      "PackagePath": "staticwebassets\\css\\js\\investments.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\loan.js",
+      "PackagePath": "staticwebassets\\css\\js\\loan.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\supportTicket.js",
+      "PackagePath": "staticwebassets\\css\\js\\supportTicket.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\transaction.js",
+      "PackagePath": "staticwebassets\\css\\js\\transaction.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\css\\js\\user.js",
+      "PackagePath": "staticwebassets\\css\\js\\user.js"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts.html",
@@ -199,6 +435,14 @@
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Accounts\\EditAccount.html",
       "PackagePath": "staticwebassets\\html\\Accounts\\EditAccount.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Auth\\login.html",
+      "PackagePath": "staticwebassets\\html\\Auth\\login.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Auth\\register.html",
+      "PackagePath": "staticwebassets\\html\\Auth\\register.html"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Bills.html",
@@ -245,6 +489,50 @@
       "PackagePath": "staticwebassets\\html\\CreditCards\\EditCreditCard.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\FinanceTools.html",
+      "PackagePath": "staticwebassets\\html\\FinanceTools.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\FinanceTools\\CreateFinanceTool.html",
+      "PackagePath": "staticwebassets\\html\\FinanceTools\\CreateFinanceTool.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\FinanceTools\\ViewFinanceTool.html",
+      "PackagePath": "staticwebassets\\html\\FinanceTools\\ViewFinanceTool.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Investments.html",
+      "PackagePath": "staticwebassets\\html\\Investments.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Investments\\CreateInvestment.html",
+      "PackagePath": "staticwebassets\\html\\Investments\\CreateInvestment.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Investments\\ViewInvestment.html",
+      "PackagePath": "staticwebassets\\html\\Investments\\ViewInvestment.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Loans.html",
+      "PackagePath": "staticwebassets\\html\\Loans.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Loans\\CreateLoan.html",
+      "PackagePath": "staticwebassets\\html\\Loans\\CreateLoan.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Loans\\LoanDetails.html",
+      "PackagePath": "staticwebassets\\html\\Loans\\LoanDetails.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\SupportTickets\\CreateTicket.html",
+      "PackagePath": "staticwebassets\\html\\SupportTickets\\CreateTicket.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\SupportTickets\\ViewTicket.html",
+      "PackagePath": "staticwebassets\\html\\SupportTickets\\ViewTicket.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Transactions.html",
       "PackagePath": "staticwebassets\\html\\Transactions.html"
     },
@@ -265,8 +553,16 @@
       "PackagePath": "staticwebassets\\html\\Transactions\\TransactionDetails.html"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\Welcome.html",
+      "PackagePath": "staticwebassets\\html\\Welcome.html"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\index.html",
       "PackagePath": "staticwebassets\\html\\index.html"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\html\\supportTickets.html",
+      "PackagePath": "staticwebassets\\html\\supportTickets.html"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\acc.jpeg",
@@ -301,6 +597,26 @@
       "PackagePath": "staticwebassets\\img\\banking_hero.jpeg"
     },
     {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\bills.jpeg",
+      "PackagePath": "staticwebassets\\img\\bills.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\contact.jpeg",
+      "PackagePath": "staticwebassets\\img\\contact.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\credit.jpeg",
+      "PackagePath": "staticwebassets\\img\\credit.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\img\\transaction.jpeg",
+      "PackagePath": "staticwebassets\\img\\transaction.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\FinanceTools.js",
+      "PackagePath": "staticwebassets\\js\\FinanceTools.js"
+    },
+    {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\account.js",
       "PackagePath": "staticwebassets\\js\\account.js"
     },
@@ -311,6 +627,18 @@
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\creditCard.js",
       "PackagePath": "staticwebassets\\js\\creditCard.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\investments.js",
+      "PackagePath": "staticwebassets\\js\\investments.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\loan.js",
+      "PackagePath": "staticwebassets\\js\\loan.js"
+    },
+    {
+      "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\supportTicket.js",
+      "PackagePath": "staticwebassets\\js\\supportTicket.js"
     },
     {
       "Id": "D:\\Projects\\ASP NET REST API\\BankingAPI\\wwwroot\\js\\transaction.js",

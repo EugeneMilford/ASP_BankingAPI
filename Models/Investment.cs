@@ -16,7 +16,7 @@ namespace BankingAPI.Models
         public decimal InvestmentAmount { get; set; }
 
         [Required]
-        public string InvestmentType { get; set; } 
+        public string InvestmentType { get; set; } // E.g., "Stocks", "Bonds", "Mutual Funds"
 
         [Required]
         public decimal CurrentValue { get; set; }
@@ -31,3 +31,4 @@ namespace BankingAPI.Models
         }
     }
 }
+

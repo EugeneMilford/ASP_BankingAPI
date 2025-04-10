@@ -11,41 +11,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            margin: 0 0.1rem;
+            transition: all 0.2s ease;
+        }
+
+            .nav-link:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-link.active {
+                background-color: rgba(255, 255, 255, 0.2);
+                font-weight: 600;
+            }
+
+        /* Add this to your main CSS file or in a style tag */
+        body {
+            padding-top: 70px; /* To account for fixed navbar */
+        }
+    </style>
+
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Banking App</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-bank me-2"></i>Banking App
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html" id="nav-home">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="Accounts.html" class="nav-item nav-link">Accounts</a>
+                        <a class="nav-link" href="Accounts.html" id="nav-accounts">
+                            <i class="bi bi-wallet2 me-1"></i>Accounts
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="Transactions.html" class="nav-item nav-link">Transactions</a>
+                        <a class="nav-link" href="Transactions.html" id="nav-transactions">
+                            <i class="bi bi-arrow-left-right me-1"></i>Transactions
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="CreditCards.html" class="nav-item nav-link">Credit</a>
+                        <a class="nav-link" href="CreditCards.html" id="nav-credit">
+                            <i class="bi bi-credit-card me-1"></i>Credit
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="Bills.html" class="nav-item nav-link">Bill Payments</a>
+                        <a class="nav-link" href="Bills.html" id="nav-bills">
+                            <i class="bi bi-receipt me-1"></i>Bill Payments
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="Contact.html" class="nav-item nav-link">Contact</a>
+                        <a class="nav-link" href="Loans.html" id="nav-loans">
+                            <i class="bi bi-cash-stack me-1"></i>Loans
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Investments.html" id="nav-investments">
+                            <i class="bi bi-graph-up me-1"></i>Investments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FinanceTools.html" id="nav-tools">
+                            <i class="bi bi-tools me-1"></i>Finance Tools
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supportTickets.html" id="nav-support">
+                            <i class="bi bi-headset me-1"></i>Support
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html" id="nav-contact">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light me-2">
+                        <i class="bi bi-person-circle me-1"></i>Login
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <!-- Hero Section Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -382,5 +453,40 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Automatically highlight current page in navbar
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get current page filename
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+            // Remove all active classes first
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Find and activate the current page's nav item
+            const navItems = {
+                'index.html': 'nav-home',
+                'Accounts.html': 'nav-accounts',
+                'Transactions.html': 'nav-transactions',
+                'CreditCards.html': 'nav-credit',
+                'Bills.html': 'nav-bills',
+                'Loans.html': 'nav-loans',
+                'Investments.html': 'nav-investments',
+                'FinanceTools.html': 'nav-tools',
+                'supportTickets.html': 'nav-support',
+                'Contact.html': 'nav-contact'
+            };
+
+            if (navItems[currentPage]) {
+                const activeNav = document.getElementById(navItems[currentPage]);
+                if (activeNav) activeNav.classList.add('active');
+            }
+        });
+    </script>
+
+
 </body>
+
+
 </html>

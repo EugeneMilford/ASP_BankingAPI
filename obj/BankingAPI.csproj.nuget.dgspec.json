@@ -84,6 +84,10 @@
               "target": "Package",
               "version": "[8.0.0-preview1, )"
             },
+            "Microsoft.SqlServer.SqlManagementObjects": {
+              "target": "Package",
+              "version": "[172.64.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -94,7 +98,7 @@
             },
             "bootstrap": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.5, )"
             }
           },
           "imports": [
