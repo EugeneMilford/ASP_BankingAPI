@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Loan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .btn-submit {
+            background-color: #3498db;
+            border: none;
+            padding: 10px 20px;
+            font-weight: 500;
+        }
+
+            .btn-submit:hover {
+                background-color: #2980b9;
+            }
+
+        .alert {
+            transition: all 0.3s ease;
+        }
+
+        .loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1040;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner-border text-light" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h2 class="form-title">Create New Loan</h2>
+
+            <!-- Message Alert -->
+            <div id="message" class="alert d-none"></div>
+
+            <form id="createLoanForm">
+                <div class="mb-3">
+                    <label for="accountId" class="form-label">Account</label>
+                    <select class="form-select" id="accountId" required>
+                        <option value="">Select an account</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="loanAmount" class="form-label">Loan Amount ($)</label>
+                    <input type="number" class="form-control" id="loanAmount" step="0.01" min="0.01" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="interestRate" class="form-label">Interest Rate (%)</label>
+                    <input type="number" class="form-control" id="interestRate" step="0.01" min="0" max="100" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="startDate" class="form-label">Start Date</label>
+                        <input type="date" class="form-control" id="startDate" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="termMonths" class="form-label">Loan Term (Months)</label>
+                        <input type="number" class="form-control" id="termMonths" min="1" max="360" value="12" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description (Optional)</label>
+                    <textarea class="form-control" id="description" rows="2"></textarea>
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary btn-submit" id="submitButton">
+                        <i class="bi bi-check-circle"></i> Create Loan
+                    </button>
+                    <a href="../Loans.html" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to Loans
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // API Configuration
+        const API_BASE_URL = 'https://localhost:7256/api';
+        const ACCOUNTS_URL = `${API_BASE_URL}/accounts`;
+        const LOANS_URL = `${API_BASE_URL}/loans`;
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set default date to today
+            document.getElementById('startDate').valueAsDate = new Date();
+
+            // Load accounts dropdown
+            loadAccounts();
+
+            // Setup form submission
+            document.getElementById('createLoanForm').addEventListener('submit', handleFormSubmit);
+        });
+
+        // Load accounts into dropdown
+        async function loadAccounts() {
+            try {
+                showLoading(true);
+                showMessage('Loading accounts...', 'info');
+                const response = await fetch(ACCOUNTS_URL);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const accounts = await response.json();
+                const accountSelect = document.getElementById('accountId');
+
+                // Clear existing options
+                accountSelect.innerHTML = '<option value="">Select an account</option>';
+
+                // Add account options
+                accounts.forEach(account => {
+                    const option = document.createElement('option');
+                    option.value = account.id;
+                    option.textContent = `${account.accountNumber} (${account.accountType}) - $${account.balance.toFixed(2)}`;
+                    accountSelect.appendChild(option);
+                });
+
+                // Hide the message when accounts are loaded
+                document.getElementById('message').classList.add('d-none');
+
+            } catch (error) {
+                showMessage(`Failed to load accounts: ${error.message}`, 'danger');
+                console.error('Account loading error:', error);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Handle form submission
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            // Get form elements and submit button
+            const form = event.target;
+            const submitButton = document.getElementById('submitButton');
+            const originalButtonText = submitButton.innerHTML;
+
+            // Set loading state
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+            submitButton.disabled = true;
+            showLoading(true);
+
+            // Get form values
+            const accountId = form.accountId.value;
+            const loanAmount = parseFloat(form.loanAmount.value);
+            const interestRate = parseFloat(form.interestRate.value);
+            const startDate = form.startDate.value;
+            const termMonths = parseInt(form.termMonths.value);
+            const description = form.description.value;
+
+            // Validate inputs
+            if (!accountId) {
+                showMessage('Please select an account', 'danger');
+                resetSubmitButton(submitButton, originalButtonText);
+                return;
+            }
+
+            if (isNaN(loanAmount) || loanAmount <= 0) {
+                showMessage('Please enter a valid loan amount', 'danger');
+                resetSubmitButton(submitButton, originalButtonText);
+                return;
+            }
+
+            if (isNaN(interestRate) || interestRate < 0) {
+                showMessage('Please enter a valid interest rate', 'danger');
+                resetSubmitButton(submitButton, originalButtonText);
+                return;
+            }
+
+            if (!startDate) {
+                showMessage('Please select a start date', 'danger');
+                resetSubmitButton(submitButton, originalButtonText);
+                return;
+            }
+
+            if (isNaN(termMonths) || termMonths <= 0) {
+                showMessage('Please enter a valid loan term', 'danger');
+                resetSubmitButton(submitButton, originalButtonText);
+                return;
+            }
+
+            // Calculate end date
+            const startDateObj = new Date(startDate);
+            const endDateObj = new Date(startDateObj);
+            endDateObj.setMonth(endDateObj.getMonth() + termMonths);
+
+            // Prepare loan data
+            const loanData = {
+                accountId: parseInt(accountId),
+                loanAmount: loanAmount,
+                interestRate: interestRate,
+                loanStartDate: startDateObj.toISOString(),
+                loanEndDate: endDateObj.toISOString(),
+                description: description || null
+            };
+
+            showMessage('Creating loan...', 'info');
+
+            // Submit to server
+            try {
+                const response = await fetch(LOANS_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(loanData)
+                });
+
+                // Check if response is JSON
+                const contentType = response.headers.get('content-type');
+                let result;
+
+                if (contentType && contentType.includes('application/json')) {
+                    result = await response.json();
+                } else {
+                    const text = await response.text();
+                    throw new Error(text || 'Invalid server response');
+                }
+
+                if (!response.ok) {
+                    throw new Error(result.message || 'Loan creation failed');
+                }
+
+                // Success handling
+                showMessage(
+                    `Loan created successfully! Loan ID: ${result.loanId}`,
+                    'success'
+                );
+
+                // Store loan data in sessionStorage
+                sessionStorage.setItem('loanCreated', 'true');
+                sessionStorage.setItem('loanMessage', `Loan #${result.loanId} created successfully.`);
+                sessionStorage.setItem('newLoanData', JSON.stringify({
+                    loanId: result.loanId,
+                    accountId: result.accountId,
+                    accountNumber: result.accountNumber,
+                    accountType: result.accountType,
+                    loanAmount: loanAmount,
+                    interestRate: interestRate,
+                    remainingAmount: loanAmount, // Initial remaining equals loan amount
+                    monthlyRepayment: result.monthlyRepayment,
+                    loanStartDate: startDateObj.toISOString(),
+                    loanEndDate: endDateObj.toISOString(),
+                    isLoanPaidOff: false
+                }));
+
+                // Redirect back to loans page after 2 seconds
+                setTimeout(() => {
+                    window.location.href = '../Loans.html';
+                }, 2000);
+
+            } catch (error) {
+                console.error('Loan creation error:', error);
+                let errorMessage = 'Loan creation failed';
+
+                try {
+                    const errorResponse = JSON.parse(error.message);
+                    errorMessage = errorResponse.message || errorMessage;
+                } catch (e) {
+                    errorMessage = error.message || errorMessage;
+                }
+
+                showMessage(errorMessage, 'danger');
+            } finally {
+                resetSubmitButton(submitButton, originalButtonText);
+                showLoading(false);
+            }
+        }
+
+        function resetSubmitButton(button, originalText) {
+            button.innerHTML = originalText;
+            button.disabled = false;
+            showLoading(false);
+        }
+
+        // Show loading overlay
+        function showLoading(show) {
+            document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none';
+        }
+
+        // Show message to user
+        function showMessage(message, type) {
+            const messageEl = document.getElementById('message');
+            messageEl.textContent = message;
+            messageEl.className = `alert alert-${type} d-block`;
+
+            // Auto-hide success and info messages after 5 seconds
+            if (type === 'success' || type === 'info') {
+                setTimeout(() => {
+                    messageEl.classList.add('d-none');
+                }, 5000);
+            }
+        }
+    </script>
+</body>
+</html>

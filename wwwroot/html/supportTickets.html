@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Support Tickets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .tickets-breadcrumb {
+            background-color: #2c3e50;
+            margin-top: 56px;
+        }
+
+        #ticketsTable {
+            margin-top: 20px;
+        }
+
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #notificationArea {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            z-index: 1050;
+            max-width: 350px;
+        }
+
+        .filter-card {
+            margin-bottom: 20px;
+        }
+
+        .status-badge {
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.875em;
+            font-weight: 500;
+        }
+
+        .bg-success {
+            background-color: #28a745 !important;
+        }
+
+        .bg-warning {
+            background-color: #ffc107 !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Banking App</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Accounts.html">Accounts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Transactions.html">Transactions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CreditCards.html">Credit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Bills.html">Bill Payments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Loans.html">Loans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Investments.html">Investments</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="SupportTickets.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid tickets-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4">Support Tickets</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-primary">Support</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="notificationArea"></div>
+
+    <div class="modal fade" id="resolveModal" tabindex="-1" aria-labelledby="resolveModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resolveModalLabel">Resolve Support Ticket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="resolutionText" class="form-label">Resolution Details</label>
+                        <textarea class="form-control" id="resolutionText" rows="5" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="resolveButton" onclick="resolveTicket()">Resolve Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Support Tickets</h1>
+            <div>
+                <button id="refreshButton" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-arrow-clockwise"></i> Refresh
+                </button>
+                <a href="../html/SupportTickets/CreateTicket.html" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Create New Ticket
+                </a>
+            </div>
+        </div>
+
+        <div class="card filter-card">
+            <div class="card-body">
+                <h5 class="card-title">Filters</h5>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="filterAccount" class="form-label">Account</label>
+                        <select class="form-select" id="filterAccount">
+                            <option value="">All Accounts</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="filterStatus" class="form-label">Status</label>
+                        <select class="form-select" id="filterStatus">
+                            <option value="">All Statuses</option>
+                            <option value="open">Open</option>
+                            <option value="resolved">Resolved</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="filterDate" class="form-label">Date Range</label>
+                        <input type="date" class="form-control" id="filterDate">
+                    </div>
+                    <div class="col-12">
+                        <button id="applyFilters" class="btn btn-primary me-2">Apply Filters</button>
+                        <button id="resetFilters" class="btn btn-outline-secondary">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Loading support tickets...</p>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="ticketsTable">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Account</th>
+                        <th>Issue Description</th>
+                        <th>Created Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketsTableBody"></tbody>
+            </table>
+        </div>
+
+        <div id="noTickets" class="alert alert-info mt-4 text-center" style="display: none;">
+            <p>No support tickets found.</p>
+            <a href="CreateTicket.html" class="btn btn-primary mt-2">Create your first support ticket</a>
+        </div>
+
+        <nav aria-label="Ticket pagination" class="mt-4">
+            <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/supportTicket.js"></script>
+</body>
+</html>

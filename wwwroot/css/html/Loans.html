@@ -1,0 +1,613 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loans</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../css/Banking.css" rel="stylesheet" />
+    <style>
+        .loan-breadcrumb {
+            background-color: #2c3e50;
+            margin-top: 56px;
+        }
+
+        #loansTable {
+            margin-top: 20px;
+        }
+
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #notificationArea {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            z-index: 1050;
+            max-width: 350px;
+        }
+
+        .filter-card {
+            margin-bottom: 20px;
+        }
+
+        .amount-cell {
+            font-weight: 500;
+        }
+
+        .status-badge {
+            font-size: 0.875em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Banking App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accounts.html">Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Transactions.html">Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CreditCards.html">Credit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bills.html">Bill Payments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Loans.html">Loans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Investments.html">Investments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container-fluid loan-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4">Loans</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="../html/index.html">Home</a></li>
+                <li class="breadcrumb-item active text-primary">Loans</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Notification Area -->
+    <div id="notificationArea"></div>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Loan Management</h1>
+            <div>
+                <button id="refreshButton" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-arrow-clockwise"></i> Refresh
+                </button>
+                <a href="../html/Loans/CreateLoan.html" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Apply for New Loan
+                </a>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="card filter-card">
+            <div class="card-body">
+                <h5 class="card-title">Filters</h5>
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label for="filterAccount" class="form-label">Account</label>
+                        <select class="form-select" id="filterAccount">
+                            <option value="">All Accounts</option>
+                            <!-- Will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="filterStatus" class="form-label">Status</label>
+                        <select class="form-select" id="filterStatus">
+                            <option value="">All Statuses</option>
+                            <option value="active">Active</option>
+                            <option value="paid">Paid Off</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="filterDateFrom" class="form-label">From Date</label>
+                        <input type="date" class="form-control" id="filterDateFrom">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="filterDateTo" class="form-label">To Date</label>
+                        <input type="date" class="form-control" id="filterDateTo">
+                    </div>
+                    <div class="col-12">
+                        <button id="applyFilters" class="btn btn-primary me-2">Apply Filters</button>
+                        <button id="resetFilters" class="btn btn-outline-secondary">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Loading loans...</p>
+        </div>
+
+        <!-- Loans Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" id="loansTable">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Loan ID</th>
+                        <th>Account</th>
+                        <th>Amount</th>
+                        <th>Remaining</th>
+                        <th>Monthly Payment</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="loansTableBody">
+                    <!-- Loans will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Empty State -->
+        <div id="noLoans" class="alert alert-info mt-4 text-center" style="display: none;">
+            <p>No loans found.</p>
+            <a href="../html/Loans/CreateLoan.html" class="btn btn-primary mt-2">Apply for your first loan</a>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Loan pagination" class="mt-4">
+            <ul class="pagination justify-content-center" id="pagination">
+                <!-- Pagination will be loaded here -->
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <!-- JavaScript -->
+    <script>
+        // API Configuration
+        const LOANS_API_URL = 'https://localhost:7256/api/loans';
+        const ACCOUNTS_API_URL = 'https://localhost:7256/api/accounts';
+
+        // State
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        let totalLoans = 0;
+        let filterSettings = {
+            accountId: null,
+            status: '',
+            dateFrom: null,
+            dateTo: null
+        };
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('Initializing loans page');
+
+            // Check for new loan notification
+            checkForNotification();
+
+            // Load accounts for filter dropdown
+            loadAccountsForDropdowns();
+
+            // Set up event listeners
+            setupEventListeners();
+
+            // Load initial loans
+            loadLoans();
+        });
+
+        function checkForNotification() {
+            const loanCreated = sessionStorage.getItem('loanCreated');
+            if (loanCreated) {
+                const message = sessionStorage.getItem('loanMessage') || 'Loan created successfully';
+                showNotification(message, 'success');
+
+                // Clear the notification
+                sessionStorage.removeItem('loanCreated');
+                sessionStorage.removeItem('loanMessage');
+            }
+        }
+
+        async function loadAccountsForDropdowns() {
+            try {
+                console.log('Loading accounts for dropdown');
+                const response = await fetch(ACCOUNTS_API_URL);
+
+                if (!response.ok) {
+                    throw new Error(`Failed to load accounts: ${response.status}`);
+                }
+
+                const accounts = await response.json();
+                const accountSelect = document.getElementById('filterAccount');
+
+                // Clear existing options
+                accountSelect.innerHTML = '<option value="">All Accounts</option>';
+
+                // Add new options
+                accounts.forEach(account => {
+                    const option = document.createElement('option');
+                    option.value = account.id;
+                    option.textContent = `${account.accountNumber} (${account.accountType})`;
+                    accountSelect.appendChild(option);
+                });
+
+                console.log('Accounts loaded successfully');
+            } catch (error) {
+                console.error('Error loading accounts:', error);
+                showNotification('Failed to load accounts', 'danger');
+            }
+        }
+
+        function setupEventListeners() {
+            // Refresh button
+            document.getElementById('refreshButton').addEventListener('click', function () {
+                console.log('Refresh button clicked');
+                loadLoans(currentPage);
+            });
+
+            // Filter buttons
+            document.getElementById('applyFilters').addEventListener('click', applyFilters);
+            document.getElementById('resetFilters').addEventListener('click', resetFilters);
+        }
+
+        async function loadLoans(page = 1) {
+            try {
+                console.log(`Loading loans page ${page}`);
+                showLoadingState(true);
+                clearTable();
+
+                // Build API URL with filters
+                let url = `${LOANS_API_URL}?page=${page}&size=${itemsPerPage}`;
+
+                if (filterSettings.accountId) {
+                    url += `&accountId=${filterSettings.accountId}`;
+                }
+
+                if (filterSettings.status) {
+                    url += `&isPaidOff=${filterSettings.status === 'paid'}`;
+                }
+
+                if (filterSettings.dateFrom) {
+                    url += `&dateFrom=${filterSettings.dateFrom}`;
+                }
+
+                if (filterSettings.dateTo) {
+                    url += `&dateTo=${filterSettings.dateTo}`;
+                }
+
+                console.log('API Request URL:', url);
+
+                const response = await fetch(url);
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`API error: ${response.status} - ${errorText}`);
+                }
+
+                const data = await response.json();
+                console.log('API Response:', data);
+
+                if (!data.items || data.items.length === 0) {
+                    showEmptyState();
+                    return;
+                }
+
+                totalLoans = data.totalItems || 0;
+                renderLoans(data.items);
+                updatePagination(page, Math.ceil(totalLoans / itemsPerPage));
+
+            } catch (error) {
+                console.error('Error loading loans:', error);
+                showErrorState(error);
+            } finally {
+                showLoadingState(false);
+            }
+        }
+
+        function showLoadingState(show) {
+            document.getElementById('loadingSpinner').style.display = show ? 'block' : 'none';
+        }
+
+        function clearTable() {
+            document.getElementById('loansTableBody').innerHTML = '';
+            document.getElementById('noLoans').style.display = 'none';
+        }
+
+        function renderLoans(loans) {
+            const tableBody = document.getElementById('loansTableBody');
+
+            loans.forEach(loan => {
+                const row = document.createElement('tr');
+
+                // Format dates
+                const startDate = formatDate(loan.loanStartDate);
+                const endDate = formatDate(loan.loanEndDate);
+
+                // Determine status badge
+                const statusBadge = loan.isLoanPaidOff
+                    ? '<span class="badge bg-success status-badge">Paid Off</span>'
+                    : '<span class="badge bg-primary status-badge">Active</span>';
+
+                row.innerHTML = `
+                        <td>${loan.loanId}</td>
+                        <td>${loan.accountNumber || 'N/A'}</td>
+                        <td>$${formatCurrency(loan.loanAmount)}</td>
+                        <td>$${formatCurrency(loan.remainingAmount)}</td>
+                        <td>$${formatCurrency(loan.monthlyRepayment)}</td>
+                        <td>${startDate}</td>
+                        <td>${endDate}</td>
+                        <td>${statusBadge}</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary me-2"
+                                onclick="viewLoan(${loan.loanId})">
+                                <i class="bi bi-eye"></i> View
+                            </button>
+                            ${loan.isLoanPaidOff ? '' : `
+                            <button class="btn btn-sm btn-outline-success me-2"
+                                onclick="makePayment(${loan.loanId})">
+                                <i class="bi bi-cash"></i> Pay
+                            </button>
+                            `}
+                            <button class="btn btn-sm btn-outline-danger"
+                                onclick="deleteLoan(${loan.loanId})">
+                                <i class="bi bi-trash"></i> Delete
+                            </button>
+                        </td>
+                    `;
+
+                tableBody.appendChild(row);
+            });
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return 'N/A';
+            try {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            } catch (e) {
+                console.warn('Error formatting date:', dateString, e);
+                return dateString;
+            }
+        }
+
+        function formatCurrency(amount) {
+            return parseFloat(amount).toFixed(2);
+        }
+
+        function showEmptyState() {
+            document.getElementById('noLoans').style.display = 'block';
+            document.getElementById('pagination').innerHTML = '';
+        }
+
+        function showErrorState(error) {
+            const errorElement = document.getElementById('noLoans');
+            errorElement.style.display = 'block';
+            errorElement.innerHTML = `
+                    <p class="text-danger">Error loading loans</p>
+                    <p>${error.message}</p>
+                    <button class="btn btn-primary mt-2" onclick="loadLoans()">
+                        Try Again
+                    </button>
+                `;
+            document.getElementById('pagination').innerHTML = '';
+        }
+
+        function updatePagination(currentPage, totalPages) {
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            if (totalPages <= 1) return;
+
+            // Previous button
+            const prevLi = document.createElement('li');
+            prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+            prevLi.innerHTML = `<a class="page-link" href="#" onclick="changePage(${currentPage - 1})">Previous</a>`;
+            pagination.appendChild(prevLi);
+
+            // Page numbers
+            const startPage = Math.max(1, currentPage - 2);
+            const endPage = Math.min(totalPages, currentPage + 2);
+
+            if (startPage > 1) {
+                addPageButton(pagination, 1);
+                if (startPage > 2) {
+                    addEllipsis(pagination);
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                addPageButton(pagination, i, i === currentPage);
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    addEllipsis(pagination);
+                }
+                addPageButton(pagination, totalPages);
+            }
+
+            // Next button
+            const nextLi = document.createElement('li');
+            nextLi.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+            nextLi.innerHTML = `<a class="page-link" href="#" onclick="changePage(${currentPage + 1})">Next</a>`;
+            pagination.appendChild(nextLi);
+        }
+
+        function addPageButton(pagination, pageNumber, isActive = false) {
+            const li = document.createElement('li');
+            li.className = `page-item ${isActive ? 'active' : ''}`;
+            li.innerHTML = `<a class="page-link" href="#" onclick="changePage(${pageNumber})">${pageNumber}</a>`;
+            pagination.appendChild(li);
+        }
+
+        function addEllipsis(pagination) {
+            const li = document.createElement('li');
+            li.className = 'page-item disabled';
+            li.innerHTML = `<span class="page-link">...</span>`;
+            pagination.appendChild(li);
+        }
+
+        function changePage(page) {
+            if (page < 1 || page > Math.ceil(totalLoans / itemsPerPage)) return;
+            currentPage = page;
+            loadLoans(currentPage);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function applyFilters() {
+            console.log('Applying filters');
+
+            filterSettings = {
+                accountId: document.getElementById('filterAccount').value || null,
+                status: document.getElementById('filterStatus').value || '',
+                dateFrom: document.getElementById('filterDateFrom').value || null,
+                dateTo: document.getElementById('filterDateTo').value || null
+            };
+
+            currentPage = 1;
+            loadLoans();
+        }
+
+        function resetFilters() {
+            console.log('Resetting filters');
+
+            document.getElementById('filterAccount').value = '';
+            document.getElementById('filterStatus').value = '';
+            document.getElementById('filterDateFrom').value = '';
+            document.getElementById('filterDateTo').value = '';
+
+            filterSettings = {
+                accountId: null,
+                status: '',
+                dateFrom: null,
+                dateTo: null
+            };
+
+            currentPage = 1;
+            loadLoans();
+        }
+
+        function showNotification(message, type = 'info') {
+            const notificationArea = document.getElementById('notificationArea');
+
+            // Clear any existing notifications
+            notificationArea.innerHTML = '';
+
+            const toast = document.createElement('div');
+            toast.className = `toast show alert alert-${type}`;
+            toast.role = 'alert';
+            toast.ariaLive = 'assertive';
+            toast.ariaAtomic = 'true';
+
+            toast.innerHTML = `
+                    <div class="toast-header">
+                        <strong class="me-auto">${type.charAt(0).toUpperCase() + type.slice(1)}</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        ${message}
+                    </div>
+                `;
+
+            notificationArea.appendChild(toast);
+
+            // Auto-hide after delay
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => {
+                    if (toast.parentNode === notificationArea) {
+                        notificationArea.removeChild(toast);
+                    }
+                }, 300);
+            }, type === 'danger' ? 10000 : 5000);
+        }
+
+        // Global functions
+        window.viewLoan = function (id) {
+            console.log('Viewing loan:', id);
+            window.location.href = `../html/Loans/ViewLoan.html?id=${id}`;
+        };
+
+        window.makePayment = function (id) {
+            console.log('Making payment for loan:', id);
+            window.location.href = `../html/Loans/MakePayment.html?id=${id}`;
+        };
+
+        window.deleteLoan = async function (id) {
+            if (!confirm('Are you sure you want to delete this loan?\nThis action cannot be undone.')) {
+                return;
+            }
+
+            try {
+                console.log('Deleting loan:', id);
+                const button = document.querySelector(`button[onclick="deleteLoan(${id})"]`);
+
+                if (button) {
+                    button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Deleting...';
+                    button.disabled = true;
+                }
+
+                const response = await fetch(`${LOANS_API_URL}/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json().catch(() => ({}));
+                    throw new Error(errorData.message || 'Failed to delete loan');
+                }
+
+                const result = await response.json();
+                showNotification(`Loan deleted successfully.`, 'success');
+
+                // Re-load current page
+                loadLoans(currentPage);
+
+            } catch (error) {
+                console.error('Error deleting loan:', error);
+                showNotification(`Delete failed: ${error.message}`, 'danger');
+            } finally {
+                const buttons = document.querySelectorAll(`button[onclick="deleteLoan(${id})"]`);
+                buttons.forEach(button => {
+                    button.innerHTML = '<i class="bi bi-trash"></i> Delete';
+                    button.disabled = false;
+                });
+            }
+        };
+    </script>
+</body>
+</html>

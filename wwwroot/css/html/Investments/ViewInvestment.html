@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Investment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .details-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .details-title {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .detail-row {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .detail-label {
+            font-weight: 500;
+            color: #6c757d;
+        }
+
+        .detail-value {
+            font-weight: 400;
+        }
+
+        .positive-return {
+            color: #28a745;
+        }
+
+        .negative-return {
+            color: #dc3545;
+        }
+
+        .loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1040;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner-border text-light" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="details-container">
+            <h2 class="details-title">Investment Details</h2>
+
+            <!-- Message Alert -->
+            <div id="message" class="alert d-none"></div>
+
+            <!-- Investment Details -->
+            <div id="investmentDetails">
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Investment ID:</div>
+                    <div class="col-md-8 detail-value" id="investmentId">Loading...</div>
+                </div>
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Account:</div>
+                    <div class="col-md-8 detail-value" id="accountNumber">Loading...</div>
+                </div>
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Investment Type:</div>
+                    <div class="col-md-8 detail-value" id="investmentType">Loading...</div>
+                </div>
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Investment Amount:</div>
+                    <div class="col-md-8 detail-value" id="investmentAmount">Loading...</div>
+                </div>
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Current Value:</div>
+                    <div class="col-md-8 detail-value" id="currentValue">Loading...</div>
+                </div>
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Returns:</div>
+                    <div class="col-md-8 detail-value" id="returns">Loading...</div>
+                </div>
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Investment Date:</div>
+                    <div class="col-md-8 detail-value" id="investmentDate">Loading...</div>
+                </div>
+                <div class="detail-row row">
+                    <div class="col-md-4 detail-label">Description:</div>
+                    <div class="col-md-8 detail-value" id="description">None</div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="d-grid gap-2 mt-4">
+                <a href="../Investments.html" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to Investments
+                </a>
+                <button class="btn btn-outline-danger" id="deleteButton">
+                    <i class="bi bi-trash"></i> Delete Investment
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // API Configuration
+        const API_BASE_URL = 'https://localhost:7256/api';
+        const INVESTMENTS_URL = `${API_BASE_URL}/investments`;
+
+        // Get investment ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const investmentId = urlParams.get('id');
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!investmentId) {
+                showMessage('No investment ID provided', 'danger');
+                return;
+            }
+
+            // Load investment details
+            loadInvestmentDetails();
+
+            // Setup delete button
+            document.getElementById('deleteButton').addEventListener('click', deleteInvestment);
+        });
+
+        // Load investment details
+        async function loadInvestmentDetails() {
+            try {
+                showLoading(true);
+
+                const response = await fetch(`${INVESTMENTS_URL}/${investmentId}`);
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
+                }
+
+                const data = await response.json();
+
+                if (!data.success || !data.investment) {
+                    throw new Error(data.message || 'Investment not found');
+                }
+
+                const investment = data.investment;
+
+                // Calculate returns
+                const returns = investment.currentValue - investment.investmentAmount;
+                const returnsClass = returns >= 0 ? 'positive-return' : 'negative-return';
+                const returnsSign = returns >= 0 ? '+' : '';
+
+                // Format dates
+                const investmentDate = formatDate(investment.investmentDate);
+
+                // Populate details
+                document.getElementById('investmentId').textContent = investment.investmentId;
+                document.getElementById('accountNumber').textContent =
+                    `${investment.accountNumber || 'N/A'} (Account ID: ${investment.accountId})`;
+                document.getElementById('investmentType').innerHTML =
+                    `<span class="badge bg-secondary">${investment.investmentType}</span>`;
+                document.getElementById('investmentAmount').textContent =
+                    `$${formatCurrency(investment.investmentAmount)}`;
+                document.getElementById('currentValue').textContent =
+                    `$${formatCurrency(investment.currentValue)}`;
+                document.getElementById('returns').innerHTML =
+                    `<span class="${returnsClass}">${returnsSign}$${formatCurrency(Math.abs(returns))}</span>`;
+                document.getElementById('investmentDate').textContent = investmentDate;
+                document.getElementById('description').textContent =
+                    investment.description || 'None';
+
+            } catch (error) {
+                console.error('Error loading investment details:', error);
+                showMessage(`Failed to load investment: ${error.message}`, 'danger');
+                document.getElementById('investmentDetails').innerHTML = `
+                    <div class="alert alert-danger">
+                        Error loading investment details: ${error.message}
+                    </div>
+                `;
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Delete investment
+        async function deleteInvestment() {
+            if (!confirm('Are you sure you want to delete this investment?\nThis action cannot be undone.')) {
+                return;
+            }
+
+            try {
+                showLoading(true);
+                const button = document.getElementById('deleteButton');
+                const originalText = button.innerHTML;
+
+                button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Deleting...';
+                button.disabled = true;
+
+                const response = await fetch(`${INVESTMENTS_URL}/${investmentId}`, {
+                    method: 'DELETE'
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
+                }
+
+                const result = await response.json();
+
+                if (!result.success) {
+                    throw new Error(result.message || 'Failed to delete investment');
+                }
+
+                showMessage('Investment deleted successfully', 'success');
+
+                // Redirect back to investments page after 2 seconds
+                setTimeout(() => {
+                    window.location.href = '../Investments.html';
+                }, 2000);
+
+            } catch (error) {
+                console.error('Error deleting investment:', error);
+                showMessage(`Failed to delete investment: ${error.message}`, 'danger');
+            } finally {
+                const button = document.getElementById('deleteButton');
+                if (button) {
+                    button.innerHTML = '<i class="bi bi-trash"></i> Delete Investment';
+                    button.disabled = false;
+                }
+                showLoading(false);
+            }
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return 'N/A';
+            try {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            } catch (e) {
+                console.warn('Error formatting date:', dateString, e);
+                return dateString;
+            }
+        }
+
+        function formatCurrency(amount) {
+            return parseFloat(amount).toFixed(2);
+        }
+
+        // Show loading overlay
+        function showLoading(show) {
+            document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none';
+        }
+
+        // Show message to user
+        function showMessage(message, type) {
+            const messageEl = document.getElementById('message');
+            messageEl.textContent = message;
+            messageEl.className = `alert alert-${type} d-block`;
+
+            // Auto-hide success and info messages after 5 seconds
+            if (type === 'success' || type === 'info') {
+                setTimeout(() => {
+                    messageEl.classList.add('d-none');
+                }, 5000);
+            }
+        }
+    </script>
+</body>
+</html>

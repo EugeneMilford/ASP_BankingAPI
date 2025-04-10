@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Banking Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../css/Banking.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            margin: 0 0.1rem;
+            transition: all 0.2s ease;
+        }
+
+            .nav-link:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-link.active {
+                background-color: rgba(255, 255, 255, 0.2);
+                font-weight: 600;
+            }
+
+        /* Add this to your main CSS file or in a style tag */
+        body {
+            padding-top: 70px; /* To account for fixed navbar */
+        }
+    </style>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-bank me-2"></i>Banking App
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="nav-home">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Accounts.html" id="nav-accounts">
+                            <i class="bi bi-wallet2 me-1"></i>Accounts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Transactions.html" id="nav-transactions">
+                            <i class="bi bi-arrow-left-right me-1"></i>Transactions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CreditCards.html" id="nav-credit">
+                            <i class="bi bi-credit-card me-1"></i>Credit
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bills.html" id="nav-bills">
+                            <i class="bi bi-receipt me-1"></i>Bill Payments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Loans.html" id="nav-loans">
+                            <i class="bi bi-cash-stack me-1"></i>Loans
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Investments.html" id="nav-investments">
+                            <i class="bi bi-graph-up me-1"></i>Investments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FinanceTools.html" id="nav-tools">
+                            <i class="bi bi-tools me-1"></i>Finance Tools
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="supportTickets.html" id="nav-support">
+                            <i class="bi bi-headset me-1"></i>Support
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html" id="nav-contact">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light me-2">
+                        <i class="bi bi-person-circle me-1"></i>Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="hero-section position-relative">
+            <img class="w-100 hero-img" src="../img/banking_hero.jpeg" alt="Image">
+            <div class="hero-caption position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 mb-4 animated slideInDown">Your Financial Status Is Our Goal</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-4 align-items-end mb-4">
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="../img/banking06.jpeg">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-4">We Help Our Clients To Grow Their Futures</h1>
+                    <p class="mb-4">
+                        We offer a comprehensive suite of banking services designed to meet the needs of modern consumers. Our app provides a range of features including real-time account management,
+                        instant transfers, bill payments, investment opportunities, and personalized financial advice
+                    </p>
+                    <div class="border rounded p-4">
+                        <nav>
+                            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                <button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story"
+                                        aria-selected="true">
+                                    Story
+                                </button>
+                                <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission"
+                                        aria-selected="false">
+                                    Mission
+                                </button>
+                                <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision"
+                                        aria-selected="false">
+                                    Vision
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-story" role="tabpanel"
+                                 aria-labelledby="nav-story-tab">
+                                <p>
+                                    Starting as a small fintech startup, we have grown into a trusted name in the digital banking industry. Our journey has been marked by continuous innovation,
+                                    strategic partnerships, and a relentless focus on customer satisfaction
+                                </p>
+                                <p class="mb-0">
+                                    From introducing user-friendly mobile apps to pioneering new financial products, we have always stayed ahead of the curve, ensuring our customers have the best
+                                    banking experience possible
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-mission" role="tabpanel"
+                                 aria-labelledby="nav-mission-tab">
+                                <p>
+                                    Our mission is to empower individuals and businesses with innovative, secure, and seamless banking solutions. We strive to enhance financial inclusion by
+                                    offering accessible and efficient banking services that cater to the diverse needs of our customers.
+                                </p>
+                                <p class="mb-0">
+                                    Our commitment is to deliver exceptional value, foster trust, and support the financial well-being of our community.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                                <p>
+                                    Our vision is to be the leading digital banking platform that transforms the way people manage their finances. We aim to revolutionize banking by leveraging
+                                    cutting-edge technology, ensuring unparalleled user experiences
+                                </p>
+                                <p class="mb-0">
+                                    We envision a future where banking is not just a service, but a catalyst for economic growth and personal empowerment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Start -->
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-5 mb-5">Services For Personal Needs</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Account Manangement</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Bill Payments</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Easy Transcations</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Credit Card Assistance</h5>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="../img/banking01.jpeg"
+                                             style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Experience In Financial Support</h3>
+                                    <p class="mb-4">
+                                        Our account management services include customizable budgeting tools that help you set financial goals and track your progress. Whether you're planning for a major
+                                        purchase or simply trying to save more each month, our tools provide valuable insights and recommendations to keep you on track
+                                    </p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <a href="../html/Accounts.html" class="btn btn-primary py-3 px-5 mt-3">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="../img/banking02.jpeg"
+                                             style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Experience In Financial Support</h3>
+                                    <p class="mb-4">
+                                        Say goodbye to late fees and missed payments with [Your Bank's Name]'s convenient bill payment services. Our online platform allows you to schedule one-time or recurring
+                                        payments for all your bills, from utilities to subscriptions. Easily manage and track your payments in one place, and set up automatic payments to ensure your bills are
+                                        paid on time, every time
+                                    </p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="../img/banking04.jpeg"
+                                             style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Experience In Financial Support</h3>
+                                    <p class="mb-4">
+                                        Experience seamless and efficient transactions with [Your Bank's Name]'s cutting-edge technology. Our platform provides a range of options for transferring money, whether
+                                        you're sending funds to friends and family, making payments, or transferring between your own accounts
+                                    </p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute rounded w-100 h-100" src="../img/banking03.jpeg"
+                                             style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-4">Experience In Financial Support</h3>
+                                    <p class="mb-4">
+                                        Managing your credit card account is easy with our online and mobile banking tools. Track your spending, view statements, and make payments with just a few clicks. Set up alerts to monitor your account activity and stay informed about your spending
+                                    </p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Start -->
+    <div class="container-fluid feature py-5">
+        <div class="container py-5">
+            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-3 mb-4">Empower Your Financial Journey with Us</h1>
+                <p class="mb-0">Discover a world of seamless banking solutions designed to simplify your financial life. From tracking your spending to managing investments, we provide the tools you need to succeed.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row-cols-1 feature-item p-4">
+                        <div class="col-12">
+                            <div class="feature-icon mb-4">
+                                <div class="p-3 d-inline-flex bg-white rounded">
+                                    <i class="fas fa-wallet fa-4x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-4">Easy Account Management</h5>
+                                <p class="mb-0">Effortlessly manage your accounts with our intuitive interface, giving you complete control over your finances.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row-cols-1 feature-item p-4">
+                        <div class="col-12">
+                            <div class="feature-icon mb-4">
+                                <div class="p-3 d-inline-flex bg-white rounded">
+                                    <i class="fas fa-exchange-alt fa-4x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-4">Instant Transactions</h5>
+                                <p class="mb-0">Experience instant money transfers and hassle-free payments anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row-cols-1 feature-item p-4">
+                        <div class="col-12">
+                            <div class="feature-icon mb-4">
+                                <div class="p-3 d-inline-flex bg-white rounded">
+                                    <i class="fas fa-chart-line fa-4x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-4">Budgeting Tools</h5>
+                                <p class="mb-0">Utilize our powerful budgeting tools to track expenses and achieve financial goals effortlessly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="row-cols-1 feature-item p-4">
+                        <div class="col-12">
+                            <div class="feature-icon mb-4">
+                                <div class="p-3 d-inline-flex bg-white rounded">
+                                    <i class="fas fa-credit-card fa-4x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-4">Smart Credit Card Management</h5>
+                                <p class="mb-0">Manage all your credit cards in one place with features like spending limits and rewards tracking.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row-cols-1 feature-item p-4">
+                        <div class="col-12">
+                            <div class="feature-icon mb-4">
+                                <div class="p-3 d-inline-flex bg-white rounded">
+                                    <i class="fas fa-lock fa-4x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-4">Top-Notch Security</h5>
+                                <p class="mb-0">Your security is our priority. Enjoy peace of mind with advanced encryption and fraud detection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row-cols-1 feature-item p-4">
+                        <div class="col-12">
+                            <div class="feature-icon mb-4">
+                                <div class="p-3 d-inline-flex bg-white rounded">
+                                    <i class="fas fa-users fa-4x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-4">Dedicated Support Team</h5>
+                                <p class="mb-0">Our experienced support team is available 24/7 to assist you with all your banking needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row-cols-1 feature-item p-4">
+                        <div class="col-12">
+                            <div class="feature-icon mb-4">
+                                <div class="p-3 d-inline-flex bg-white rounded">
+                                    <i class="fas fa-mobile-alt fa-4x text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-4">Mobile-First Experience</h5>
+                                <p class="mb-0">Our user-friendly mobile app gives you access to your accounts anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-services">
+                <p>Explore a wide range of banking solutions that are tailored to meet your needs, including personal banking, business accounts, loans, and investment options.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Banking App. All rights reserved.
+                <p>For support, please call our customer service at 1-800-123-4567 or email us at support@yourbank.com.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Automatically highlight current page in navbar
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get current page filename
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+            // Remove all active classes first
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Find and activate the current page's nav item
+            const navItems = {
+                'index.html': 'nav-home',
+                'Accounts.html': 'nav-accounts',
+                'Transactions.html': 'nav-transactions',
+                'CreditCards.html': 'nav-credit',
+                'Bills.html': 'nav-bills',
+                'Loans.html': 'nav-loans',
+                'Investments.html': 'nav-investments',
+                'FinanceTools.html': 'nav-tools',
+                'supportTickets.html': 'nav-support',
+                'Contact.html': 'nav-contact'
+            };
+
+            if (navItems[currentPage]) {
+                const activeNav = document.getElementById(navItems[currentPage]);
+                if (activeNav) activeNav.classList.add('active');
+            }
+        });
+    </script>
+
+
+</body>
+
+
+</html>
