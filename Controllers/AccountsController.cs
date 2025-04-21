@@ -1,13 +1,13 @@
-﻿// AccountController.cs
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BankingAPI.Data;
 using BankingAPI.Models;
-using Microsoft.AspNetCore.Authorization;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace BankingAPI.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AccountsController : ControllerBase
@@ -33,16 +33,19 @@ namespace BankingAPI.Controllers
             var account = await _context.accounts.FindAsync(id);
             if (account == null)
             {
-                return NotFound();
+                return NotFound(new { success = false, message = "Account not found" });
             }
-            return account;
+            return Ok(account);
         }
 
         // POST: api/Accounts
         [HttpPost]
-        public async Task<ActionResult<Account>> CreateAccount(Account account)
+        public async Task<ActionResult<Account>> CreateAccount([FromBody] Account account)
         {
-            account.CreatedDate = DateTime.Now;
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(new { success = false, message = "Invalid account data" });
+            }
             _context.accounts.Add(account);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetAccount), new { id = account.Id }, account);
@@ -50,15 +53,14 @@ namespace BankingAPI.Controllers
 
         // PUT: api/Accounts/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAccount(int id, Account account)
+        public async Task<IActionResult> UpdateAccount(int id, [FromBody] Account account)
         {
             if (id != account.Id)
             {
-                return BadRequest();
+                return BadRequest(new { success = false, message = "Account ID mismatch" });
             }
 
             _context.Entry(account).State = EntityState.Modified;
-            _context.Entry(account).Property(x => x.CreatedDate).IsModified = false;
 
             try
             {
@@ -68,7 +70,7 @@ namespace BankingAPI.Controllers
             {
                 if (!AccountExists(id))
                 {
-                    return NotFound();
+                    return NotFound(new { success = false, message = "Account not found" });
                 }
                 throw;
             }
@@ -83,7 +85,7 @@ namespace BankingAPI.Controllers
             var account = await _context.accounts.FindAsync(id);
             if (account == null)
             {
-                return NotFound();
+                return NotFound(new { success = false, message = "Account not found" });
             }
 
             _context.accounts.Remove(account);

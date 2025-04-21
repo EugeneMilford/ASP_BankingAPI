@@ -1104,17 +1104,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rozvmj9sy8"},{"Name":"integrity","Value":"sha256-a1iNOHn/q5IE5KuxwOvcFQjBmmWfFS3bzRJ96tSRbJA="},{"Name":"label","Value":"_content/BankingAPI/css/js/user.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4977"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022a1iNOHn/q5IE5KuxwOvcFQjBmmWfFS3bzRJ96tSRbJA=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 Aug 2024 16:41:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankingAPI/html/Accounts.c241x87mch.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Accounts.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c241x87mch"},{"Name":"integrity","Value":"sha256-LGTJp0/1XR3MVh\u002BqgkqrH/DJScjeNx8d7d1BzqdU2/E="},{"Name":"label","Value":"_content/BankingAPI/html/Accounts.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24945"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022LGTJp0/1XR3MVh\u002BqgkqrH/DJScjeNx8d7d1BzqdU2/E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 16:17:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankingAPI/html/Accounts.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Accounts.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eUl/BVLYOCdjZ6l1S/64tRsKha2Qy1Ee2\u002BQySqFMuYE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7811"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022eUl/BVLYOCdjZ6l1S/64tRsKha2Qy1Ee2\u002BQySqFMuYE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 19:24:22 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BankingAPI/html/Accounts.t3j7ts4q6l.html">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Accounts.html'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t3j7ts4q6l"},{"Name":"integrity","Value":"sha256-eUl/BVLYOCdjZ6l1S/64tRsKha2Qy1Ee2\u002BQySqFMuYE="},{"Name":"label","Value":"_content/BankingAPI/html/Accounts.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7811"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022eUl/BVLYOCdjZ6l1S/64tRsKha2Qy1Ee2\u002BQySqFMuYE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 19:24:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LGTJp0/1XR3MVh\u002BqgkqrH/DJScjeNx8d7d1BzqdU2/E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"24945"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022LGTJp0/1XR3MVh\u002BqgkqrH/DJScjeNx8d7d1BzqdU2/E=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 16:17:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankingAPI/html/Accounts/AccountDetails.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\Accounts\AccountDetails.html'))</AssetFile>
@@ -1695,14 +1695,14 @@
     <StaticWebAssetEndpoint Include="_content/BankingAPI/js/account.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\account.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H4OYInJBDFIV5OAq\u002BooOTmPy2EK6X67/Ggnqo3KhW6M="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5577"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022H4OYInJBDFIV5OAq\u002BooOTmPy2EK6X67/Ggnqo3KhW6M=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 16:28:42 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DrWtU1IQk6kKtSg\u002BUKssYFI\u002BExjd1G5f1vxx8t02FQY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13472"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DrWtU1IQk6kKtSg\u002BUKssYFI\u002BExjd1G5f1vxx8t02FQY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 16:18:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BankingAPI/js/account.rtrpq09t78.js">
+    <StaticWebAssetEndpoint Include="_content/BankingAPI/js/account.qd287k4qpy.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\account.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rtrpq09t78"},{"Name":"integrity","Value":"sha256-H4OYInJBDFIV5OAq\u002BooOTmPy2EK6X67/Ggnqo3KhW6M="},{"Name":"label","Value":"_content/BankingAPI/js/account.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5577"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022H4OYInJBDFIV5OAq\u002BooOTmPy2EK6X67/Ggnqo3KhW6M=\u0022"},{"Name":"Last-Modified","Value":"Sun, 30 Mar 2025 16:28:42 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qd287k4qpy"},{"Name":"integrity","Value":"sha256-DrWtU1IQk6kKtSg\u002BUKssYFI\u002BExjd1G5f1vxx8t02FQY="},{"Name":"label","Value":"_content/BankingAPI/js/account.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13472"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DrWtU1IQk6kKtSg\u002BUKssYFI\u002BExjd1G5f1vxx8t02FQY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 16:18:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankingAPI/js/billPayment.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\billPayment.js'))</AssetFile>
